@@ -11,7 +11,7 @@ export const FlyingElements = () => {
       <FlyingElement
         x={x}
         y={y}
-        className="right-[200px] top-[400px]"
+        className="right-0 top-[50px]"
         src="/circle-1.png"
         width={100}
         height={100}
@@ -19,7 +19,7 @@ export const FlyingElements = () => {
       <FlyingElement
         x={x}
         y={y}
-        className="left-[200px] top-[200px]"
+        className="left-0 -top-[150px]"
         src="/circle-2.png"
         width={170}
         height={170}
@@ -27,7 +27,7 @@ export const FlyingElements = () => {
       <FlyingElement
         x={x}
         y={y}
-        className="right-[600px] top-[220px]"
+        className="right-[400px] -top-[100px]"
         src="/circle-3.png"
         width={220}
         height={220}
@@ -35,7 +35,7 @@ export const FlyingElements = () => {
       <FlyingElement
         x={x}
         y={y}
-        className="left-[600px] top-[500px]"
+        className="left-[380px] top-[180px]"
         src="/circle-4.png"
         width={300}
         height={270}

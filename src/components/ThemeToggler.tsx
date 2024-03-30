@@ -13,7 +13,7 @@ export const ThemeToggler: FC<IBasicProps> = ({ className }) => {
   };
 
   useEffect(() => {
-    const localTheme = window.localStorage.getItem("theme") || "dark";
+    const localTheme = window.localStorage.getItem("theme") || "light";
     setTheme(localTheme);
   }, []);
 
