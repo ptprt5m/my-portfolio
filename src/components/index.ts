@@ -4,3 +4,6 @@ export * from "./Header";
 export * from "./Menu";
 export * from "./FlyingElements/FlyingElement";
 export * from "./FlyingElements/FlyingElements";
+export * from "./CardWrapper";
+export * from "./AboutCard";
+export * from "./LanguageToggle";
