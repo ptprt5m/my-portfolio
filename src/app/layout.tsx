@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
-import { FlyingElements, Header } from "@/components";
+import { Header } from "@/components";
 import { cn } from "@/utils";
 import { LanguageProvider } from "@/context";
 

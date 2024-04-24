@@ -1,12 +1,11 @@
-'use client'
+"use client";
 
 import { EmptyPortfolioCard, PortfolioCard } from "@/components";
 import { Portfolio as PortfolioConst } from "@/constants";
-import { LanguageContext } from "@/context";
-import { useContext } from "react";
+import { useLanguageContext } from "@/context/languageCtx";
 
 export const PortfolioPage = () => {
-  const { language } = useContext(LanguageContext);
+  const { language } = useLanguageContext();
 
   return (
     <div className="flex flex-col gap-10 w-full items-center">
