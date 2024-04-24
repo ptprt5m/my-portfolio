@@ -7,3 +7,5 @@ export * from "./FlyingElements/FlyingElements";
 export * from "./CardWrapper";
 export * from "./AboutCard";
 export * from "./LanguageToggle";
+export * from "./EmptyPortfolioCard";
+export * from "./PortfolioCard";

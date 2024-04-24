@@ -3,7 +3,7 @@ import { Montserrat } from "next/font/google";
 import "./globals.css";
 import { FlyingElements, Header } from "@/components";
 import { cn } from "@/utils";
-import {  LanguageProvider } from "@/context";
+import { LanguageProvider } from "@/context";
 
 const font = Montserrat({ subsets: ["latin"] });
 
@@ -21,16 +21,15 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          "text-slate-700 dark:text-slate-100 font-medium text-lg",
+          "text-slate-700 dark:text-slate-100 font-medium text-lg from-zinc-200 to-zinc-50 bg-gradient-to-tl dark:from-slate-900 dark:to-slate-700 min-h-screen max-w-screen-xl m-auto",
           font.className
         )}
       >
         <LanguageProvider>
           <Header />
-          <main className="flex min-h-screen flex-col items-center justify-center from-zinc-200 to-zinc-50 bg-gradient-to-tl dark:from-slate-900 dark:to-slate-700">
-            <div className="max-w-screen-xl px-10 py-6 w-full flex relative">
+          <main className="flex flex-col items-center justify-center ">
+            <div className="px-10 py-6 w-full flex items-center justify-center">
               {children}
-              {/* <FlyingElements /> */}
             </div>
           </main>
         </LanguageProvider>

@@ -10,8 +10,8 @@ export const AboutCard = () => {
   return (
     <div className="flex flex-col gap-14">
       <div className="flex justify-between w-full">
-        <div className="flex flex-col gap-5">
-          <span className="text-4xl font-semibold">{About[language].title}</span>
+        <div className="flex flex-col gap-10 items-center">
+          <h2 className="text-4xl font-semibold">{About[language].title}</h2>
           <div className="flex flex-col gap-3" >
             {Object.entries(About[language].items).map(([key, values]) => (
               <div key={key}>
