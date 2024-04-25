@@ -1,7 +1,7 @@
-export const Location = () => (
+export const Location = ({ size = 23 }) => (
   <svg
-    width="20px"
-    height="20px"
+    width={size}
+    height={size}
     viewBox="0 0 64 64"
     enable-background="new 0 0 64 64"
     xmlSpace="preserve"

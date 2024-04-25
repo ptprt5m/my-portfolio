@@ -16,7 +16,7 @@ export const Menu = () => {
         <Link
           href={link.href}
           className={cn("transition hover:opacity-60", {
-            "text-slate-400 border-b border-slate-400": pathname === link.href,
+            "text-slate-400": pathname === link.href,
           })}
         >
           {link.title}

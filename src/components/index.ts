@@ -12,3 +12,4 @@ export * from "./PortfolioCard";
 
 export * from "./(Pages)/PortfolioPage";
 export * from "./(Pages)/SkillsPage";
+export * from "./(Pages)/ExperiencePage";

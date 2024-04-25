@@ -1,7 +1,7 @@
 export const Mail = () => (
   <svg
-    width="25px"
-    height="25px"
+    width="34px"
+    height="34px"
     viewBox="0 -4 32 32"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"

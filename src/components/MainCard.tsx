@@ -2,9 +2,8 @@
 
 import { Contacts } from "@/constants";
 import { LanguageContext } from "@/context";
-import { Mail, Telegram, Location } from "@/svg";
+import { Mail, Telegram, Location, GitHub } from "@/svg";
 import Image from "next/image";
-import Link from "next/link";
 import { useContext } from "react";
 
 export const MainCard = () => {
@@ -24,23 +23,32 @@ export const MainCard = () => {
         </div>
       </div>
       <div className="flex gap-1 items-end justify-between bg-white/[.45] dark:bg-white/[.15] py-2 px-6 rounded-xl">
-        <div className="flex gap-2 items-center">
+        <div className="flex gap-1.5 items-center">
           <Location />
           <span>{Contacts[language].location}</span>
         </div>
-        <span className="flex gap-3">
-          <Link
+        <span className="flex gap-3 items-center">
+          <a
+            href={Contacts[language].github}
+            className="transition hover:scale-125"
+            target="_blank"
+          >
+            <GitHub />
+          </a>
+          <a
             href={Contacts[language].telegramLink}
             className="transition hover:scale-125"
+            target="_blank"
           >
             <Telegram />
-          </Link>
-          <Link
+          </a>
+          <a
             href={`mailto:${Contacts[language].mail}`}
             className="transition hover:scale-125"
+            target="_blank"
           >
             <Mail />
-          </Link>
+          </a>
         </span>
       </div>
     </div>
