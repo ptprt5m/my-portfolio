@@ -3,19 +3,21 @@
 import { Experience as ExperienceConst } from "@/constants";
 import { useLanguageContext } from "@/context/languageCtx";
 import { Coding, Location, Star, Target } from "@/svg";
-import { CardWrapper } from "..";
+import { CardWrapper } from "../CardWrapper";
+import PageLayout from "./layout";
 
 export const ExperiencePage = () => {
   const { language } = useLanguageContext();
 
   return (
-    <div className="flex flex-col gap-10 w-full items-center">
-      <h2 className="text-4xl font-semibold">
-        {ExperienceConst[language].title}
-      </h2>
+    <PageLayout pageTitle={ExperienceConst[language].title}>
       <div className="w-full flex flex-col gap-10">
         {ExperienceConst[language].items.map((item) => (
-          <CardWrapper key={item.company} className="flex flex-col gap-3 w-full max-w-full" useRefLogic={false}>
+          <CardWrapper
+            key={item.company}
+            className="flex flex-col gap-3 w-full max-w-full"
+            useRefLogic={false}
+          >
             <h2 className="text-2xl">{item.company}</h2>
             {item.desc && <p>{item.desc}</p>}
             <span>{item.duration}</span>
@@ -46,6 +48,6 @@ export const ExperiencePage = () => {
           </CardWrapper>
         ))}
       </div>
-    </div>
+    </PageLayout>
   );
 };

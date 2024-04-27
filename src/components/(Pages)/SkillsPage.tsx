@@ -2,12 +2,12 @@
 
 import { Skills } from "@/constants";
 import { useLanguageContext } from "@/context/languageCtx";
+import PageLayout from "./layout";
 
 export const SkillsPage = () => {
   const { language } = useLanguageContext();
   return (
-    <div className="flex flex-col gap-10 w-full items-center">
-      <h2 className="text-4xl font-semibold">{Skills[language].title}</h2>
+    <PageLayout pageTitle={Skills[language].title}>
       <div className="flex flex-col gap-5 w-full items-center">
         {Skills[language].items.map((category) => (
           <div key={category.id} className="flex flex-col gap-3 items-center">
@@ -25,6 +25,6 @@ export const SkillsPage = () => {
           </div>
         ))}
       </div>
-    </div>
+    </PageLayout>
   );
 };

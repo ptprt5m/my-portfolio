@@ -18,7 +18,7 @@ export const MainCard = () => {
           </span>
           <span className="text-xl ">{Contacts[language].profession}</span>
         </div>
-        <div className="shadow-[0_8px_30px_rgb(0,0,0,0.12)] p-5 rounded-full bg-white/[.45]">
+        <div className="shadow-[0_8px_30px_rgb(0,0,0,0.12)] p-5 rounded-full bg-white/[.45] dark:bg-slate-500/[.65]">
           <Image src="/avatar.png" width={120} height={120} alt="avatar" />
         </div>
       </div>
