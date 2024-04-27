@@ -4,3 +4,4 @@ export * from "./location";
 export * from "./github";
 export * from "./coding";
 export * from "./star";
+export * from "./target";

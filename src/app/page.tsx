@@ -3,7 +3,7 @@ import { CardWrapper } from "@/components";
 
 export default function Home() {
   return (
-    <CardWrapper>
+    <CardWrapper size='medium'>
       <MainCard />
     </CardWrapper>
   );

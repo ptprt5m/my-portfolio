@@ -10,7 +10,7 @@ export const MainCard = () => {
   const { language } = useContext(LanguageContext);
   return (
     <div className="flex flex-col gap-14 z-10 relative">
-      <div className="flex justify-between w-full">
+      <div className="flex justify-between w-full gap-10">
         <div className="flex flex-col gap-1">
           <span className="text-4xl font-semibold">
             {Contacts[language].firstName} <br />
@@ -22,7 +22,7 @@ export const MainCard = () => {
           <Image src="/avatar.png" width={120} height={120} alt="avatar" />
         </div>
       </div>
-      <div className="flex gap-1 items-end justify-between bg-white/[.45] dark:bg-white/[.15] py-2 px-6 rounded-xl">
+      <div className="flex gap-1 items-center justify-between bg-white/[.45] dark:bg-white/[.15] py-2 px-6 rounded-xl">
         <div className="flex gap-1.5 items-center">
           <Location />
           <span>{Contacts[language].location}</span>
