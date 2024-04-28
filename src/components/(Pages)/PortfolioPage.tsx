@@ -1,6 +1,10 @@
 "use client";
 
-import { EmptyPortfolioCard, PortfolioCard } from "@/components";
+import {
+  EmptyPortfolioCard,
+  PortfolioCard,
+  ScaleAnimation,
+} from "@/components";
 import { Portfolio as PortfolioConst } from "@/constants";
 import { useLanguageContext } from "@/context/languageCtx";
 import PageLayout from "./layout";
@@ -12,9 +16,13 @@ export const PortfolioPage = () => {
     <PageLayout pageTitle={PortfolioConst[language].title}>
       <div className="grid grid-cols-3 w-full gap-10">
         {PortfolioConst[language].items.map((site) => (
-          <PortfolioCard {...site} />
+          <ScaleAnimation speed={site.id}>
+            <PortfolioCard {...site} />
+          </ScaleAnimation>
         ))}
-        <EmptyPortfolioCard />
+        <ScaleAnimation speed={PortfolioConst[language].items.length}>
+          <EmptyPortfolioCard />
+        </ScaleAnimation>
       </div>
     </PageLayout>
   );

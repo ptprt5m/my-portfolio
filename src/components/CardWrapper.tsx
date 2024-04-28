@@ -9,6 +9,7 @@ interface ICardWrapperProps {
   size?: "small" | "medium" | "large";
   className?: string;
   useRefLogic?: boolean;
+  onClick?: () => void;
 }
 
 export const CardWrapper: FC<ICardWrapperProps> = ({
@@ -16,6 +17,7 @@ export const CardWrapper: FC<ICardWrapperProps> = ({
   size = "small",
   className,
   useRefLogic = true,
+  onClick
 }) => {
   const cardRef = useRef(null);
 
@@ -38,7 +40,7 @@ export const CardWrapper: FC<ICardWrapperProps> = ({
     <div
       ref={cardRef}
       className={cn(
-        "w-full m-auto shadow-[0_8px_30px_rgb(0,0,0,0.12)] border p-10 z-10 rounded-[40px] bg-white/[.3] dark:bg-white/[.05] backdrop-blur transition dark:border-slate-400 overflow-hidden",
+        "w-full m-auto shadow-[0_8px_30px_rgb(0,0,0,0.12)] border p-10 rounded-[40px] bg-white/[.3] dark:bg-white/[.05] backdrop-blur transition dark:border-slate-400 overflow-hidden",
         {
           "max-w-lg": size === "small",
           "max-w-xl": size === "medium",
@@ -46,6 +48,7 @@ export const CardWrapper: FC<ICardWrapperProps> = ({
         },
         className
       )}
+      onClick={onClick}
     >
       <div
         className="absolute inset-0 bg-cover bg-center opacity-5"
