@@ -21,7 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          "text-slate-700 dark:text-slate-100 font-medium text-lg from-zinc-200 to-zinc-50 bg-gradient-to-tl dark:from-slate-900 dark:to-slate-700 min-h-screen max-w-screen-xl m-auto overflow-hidden",
+          "text-slate-700 dark:text-slate-100 font-medium text-lg from-zinc-200 to-zinc-50 bg-gradient-to-tl dark:from-slate-900 dark:to-slate-700 min-h-screen max-w-screen-xl m-auto overflow-x-hidden",
           font.className
         )}
       >
