@@ -3,7 +3,7 @@ import { CardWrapper } from "@/components";
 
 export default function Home() {
   return (
-    <div className="absolute top-0 h-screen flex flex-col items-center justify-center">
+    <div className="absolute top-0 h-screen flex flex-col items-center justify-center ">
       <Animation y={-100}>
         <CardWrapper size="medium">
           <MainCard />

@@ -38,7 +38,7 @@ export const PortfolioCard: FC<IPortfolioCardProps> = ({
           {stack?.map((item, i) => (
             <span
               key={i}
-              className="text-sm font-normal rounded-lg py-0.5 px-3 bg-slate-500 text-white"
+              className="text-sm font-normal rounded-lg py-0.5 px-3 bg-slate-300 dark:bg-slate-600"
             >
               {item}
             </span>

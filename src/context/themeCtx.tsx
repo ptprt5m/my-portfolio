@@ -14,15 +14,19 @@ export const ThemeContext = createContext<ThemeContextType>({
   toggleTheme: () => {},
 });
 
-export const useThemeContext = () => useContext(ThemeContext)
+export const useThemeContext = () => useContext(ThemeContext);
 
 export const ThemeProvider = ({ children }: { children: ReactNode }) => {
   const [theme, setTheme] = useState(() => {
-    const storedTheme = window.localStorage.getItem("theme");
-    return storedTheme &&
-      Object.values(ThemeVariants).includes(storedTheme as ThemeVariants)
-      ? (storedTheme as ThemeVariants)
-      : ThemeVariants.light;
+    if (typeof window !== "undefined") {
+      const storedTheme = window.localStorage.getItem("theme");
+      return storedTheme &&
+        Object.values(ThemeVariants).includes(storedTheme as ThemeVariants)
+        ? (storedTheme as ThemeVariants)
+        : ThemeVariants.light;
+    } else {
+      return ThemeVariants.light;
+    }
   });
 
   const toggleTheme = () => {
