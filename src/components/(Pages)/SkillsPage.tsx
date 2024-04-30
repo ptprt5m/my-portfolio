@@ -80,7 +80,7 @@ export const SkillsPage = () => {
           {Skills[language].items.map(
             (category) =>
               category.id === selectCategory && (
-                <div className="flex gap-5">
+                <div className="flex gap-5 flex-wrap">
                   {category.items.map((skill, i) => (
                     <ScaleAnimation speed={(i + 1) / 3}>
                       <span
