@@ -9,21 +9,25 @@ import { useEffect } from "react";
 export const LanguageProvider = ({ children }: { children?: ReactNode }) => {
   const [language, dispatch] = useReducer(
     languageReducer,
-    localStorage.getItem("lang") || "ru"
+    (typeof window !== 'undefined' ? localStorage.getItem("lang") : null) || 'ru'
   );
 
   const setLanguage = useCallback(
     (lang: string) => {
-      localStorage.setItem("lang", lang);
+      if (typeof window !== 'undefined') {
+        localStorage.setItem("lang", lang);
+      }
       dispatch(setLanguageAC(lang));
     },
     [dispatch]
   );
 
   useEffect(() => {
-    const localLanguage = localStorage.getItem("lang");
-    if (localLanguage) {
-      dispatch(setLanguageAC(localLanguage));
+    if (typeof window !== 'undefined') {
+      const localLanguage = localStorage.getItem("lang");
+      if (localLanguage) {
+        dispatch(setLanguageAC(localLanguage));
+      }
     }
   }, []);
 
