@@ -1,6 +1,11 @@
 export const SET_LANGUAGE = 'setLanguage';
 
-export function languageReducer(state, action) {
+interface Action {
+  type: string;
+  lang: string;
+}
+
+export function languageReducer(state: string, action: Action) {
     switch (action.type) {
         case SET_LANGUAGE:
             return action.lang;
@@ -9,7 +14,7 @@ export function languageReducer(state, action) {
     }
 }
 
-export const setLanguageAC = (lang) => ({
+export const setLanguageAC = (lang: string) => ({
     type: SET_LANGUAGE,
     lang,
 });
