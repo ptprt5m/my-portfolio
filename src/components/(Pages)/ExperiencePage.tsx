@@ -1,7 +1,7 @@
 "use client";
 
 import { Experience as ExperienceConst } from "@/constants";
-import { useLanguageContext } from "@/context/languageCtx";
+import { useLanguageContext } from "@/context";
 import { Coding, Location, Star, Target } from "@/svg";
 import { CardWrapper } from "../CardWrapper";
 import PageLayout from "./layout";

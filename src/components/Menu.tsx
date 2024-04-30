@@ -1,14 +1,13 @@
 "use client";
 
 import { HeaderLinks } from "@/constants";
-import { LanguageContext } from "@/context";
+import { useLanguageContext } from "@/context";
 import { cn } from "@/utils";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useContext } from "react";
 
 export const Menu = () => {
-  const { language } = useContext(LanguageContext);
+  const { language } = useLanguageContext();
   const pathname = usePathname();
   return (
     <div className="flex gap-8">

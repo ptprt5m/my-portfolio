@@ -1,35 +1,20 @@
 "use client";
 
+import { useTheme } from "@/hooks";
 import type { IBasicProps } from "@/models";
 import { cn } from "@/utils";
-import { type FC, useEffect, useState } from "react";
 import Image from "next/image";
+import type { FC } from "react";
 
 export const ThemeToggler: FC<IBasicProps> = ({ className }) => {
-  const [theme, setTheme] = useState<string | null>(null);
+  const { theme, toggleTheme } = useTheme();
 
-  const changeTheme = () => {
-    setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
-  };
-
-  useEffect(() => {
-    const localTheme = window.localStorage.getItem("theme") || "light";
-    setTheme(localTheme);
-  }, []);
-
-  useEffect(() => {
-    if (theme) {
-      window.localStorage.setItem("theme", theme);
-      document.documentElement.className = theme;
-    }
-  }, [theme]);
-
-  if (!theme) { 
-   return null
+  if (!theme) {
+    return null;
   }
 
   return (
-    <button onClick={changeTheme}>
+    <button onClick={toggleTheme}>
       <div className={cn("transition hover:opacity-75", className)}>
         <Image
           src={theme === "light" ? "/moon.png" : "/sun.png"}
@@ -39,5 +24,5 @@ export const ThemeToggler: FC<IBasicProps> = ({ className }) => {
         />
       </div>
     </button>
-  )
+  );
 };

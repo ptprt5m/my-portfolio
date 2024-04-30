@@ -1,12 +1,13 @@
 "use client";
 
 import { Skills } from "@/constants";
-import { useLanguageContext } from "@/context/languageCtx";
+import { useLanguageContext } from "@/context";
 import PageLayout from "./layout";
 import { CardWrapper } from "../CardWrapper";
 import { useState } from "react";
 import { Animation } from "../Animation";
-import { ScaleAnimation } from "..";
+import { ScaleAnimation } from "../ScaleAnimation";
+import { CircleProgress } from "../CircleProgress";
 
 export const SkillsPage = () => {
   const { language } = useLanguageContext();
@@ -28,9 +29,10 @@ export const SkillsPage = () => {
             >
               <div className="w-full h-full flex flex-col items-center gap-5">
                 <span className="text-xl">{category.title}</span>
-                <span className="p-10 rounded-full border-4">
+                {/* <span className="p-10 rounded-full border-4">
                   {category.level}%
-                </span>
+                </span> */}
+                <CircleProgress progress={category.level}/>
               </div>
             </CardWrapper>
           </Animation>

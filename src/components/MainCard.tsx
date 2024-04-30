@@ -1,14 +1,13 @@
 "use client";
 
 import { Contacts } from "@/constants";
-import { LanguageContext } from "@/context";
+import { useLanguageContext } from "@/context";
 import { Mail, Telegram, Location, GitHub } from "@/svg";
 import Image from "next/image";
-import { useContext } from "react";
 import { Animation } from "./Animation";
 
 export const MainCard = () => {
-  const { language } = useContext(LanguageContext);
+  const { language } = useLanguageContext();
   return (
     <div className="flex flex-col gap-14 relative">
       <div className="flex justify-between w-full gap-10">

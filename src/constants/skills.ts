@@ -7,7 +7,7 @@ export const Skills = {
       {
         id: 0,
         title: "Markup",
-        level: 0,
+        level: 85,
         items: ["HTML5", "SVG", "JSX/TSX", "Forms", "SEO"],
       },
       {

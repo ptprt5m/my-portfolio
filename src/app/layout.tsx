@@ -4,6 +4,7 @@ import "./globals.css";
 import { FlyingElements, Header } from "@/components";
 import { cn } from "@/utils";
 import { LanguageProvider } from "@/context";
+import { ThemeProvider } from "@/context/themeCtx";
 
 const font = Montserrat({ subsets: ["latin"] });
 
@@ -25,14 +26,16 @@ export default function RootLayout({
           font.className
         )}
       >
-        <LanguageProvider>
-          <Header />
-          <main className="flex flex-col items-center justify-center h-full overflow-hidden">
-            <div className="px-10 pt-12 pb-48 w-full flex items-center justify-center h-full">
-              {children}
-            </div>
-          </main>
-        </LanguageProvider>
+        <ThemeProvider>
+          <LanguageProvider>
+            <Header />
+            <main className="flex flex-col items-center justify-center h-full overflow-hidden">
+              <div className="px-10 pt-12 pb-48 w-full flex items-center justify-center h-full">
+                {children}
+              </div>
+            </main>
+          </LanguageProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

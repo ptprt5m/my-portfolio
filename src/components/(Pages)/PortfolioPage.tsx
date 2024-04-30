@@ -6,7 +6,7 @@ import {
   ScaleAnimation,
 } from "@/components";
 import { Portfolio as PortfolioConst } from "@/constants";
-import { useLanguageContext } from "@/context/languageCtx";
+import { useLanguageContext } from "@/context";
 import PageLayout from "./layout";
 
 export const PortfolioPage = () => {

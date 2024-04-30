@@ -1,6 +1,6 @@
 "use client";
 
-import useMousePosition from "@/hooks/useMousePosition";
+import { useMousePosition } from "@/hooks";
 import { FlyingElement } from "./FlyingElement";
 
 export const FlyingElements = () => {
