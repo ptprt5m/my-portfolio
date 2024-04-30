@@ -4,10 +4,12 @@ import { Skills } from "@/constants";
 import { useLanguageContext } from "@/context";
 import PageLayout from "./layout";
 import { CardWrapper } from "../CardWrapper";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Animation } from "../Animation";
 import { ScaleAnimation } from "../ScaleAnimation";
 import { CircleProgress } from "../CircleProgress";
+import { ClickSelect, Cursor } from "@/svg";
+import { motion, useAnimation } from "framer-motion";
 
 export const SkillsPage = () => {
   const { language } = useLanguageContext();
@@ -17,10 +19,40 @@ export const SkillsPage = () => {
   const toggleSelectCategory = (category: number) => {
     setSelectCategory(category);
   };
+
+  // const controls = useAnimation();
+  // const [clicked, setClicked] = useState(false);
+
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     controls.start({
+  //       opacity: 1,
+  //       transition: { duration: 0.5 },
+  //     });
+  //     const interval = setInterval(() => {
+  //       controls.start({
+  //         opacity: [1, 0, 1],
+  //         transition: { duration: 0.5 },
+  //       });
+  //     }, 1000);
+  //     return () => clearInterval(interval);
+  //   }, 1000);
+
+  //   return () => clearTimeout(timer);
+  // }, [controls]);
+
+  // const handleClick = () => {
+  //   setClicked(true);
+  //   controls.start({
+  //     opacity: 0,
+  //     transition: { duration: 0.5 },
+  //   });
+  // };
+
   return (
     <PageLayout pageTitle={Skills[language].title}>
-      <div className="flex gap-5 w-full items-center justify-between">
-        {Skills[language].items.map((category) => (
+      <div className="grid grid-cols-4 gap-5 w-full">
+        {Skills[language].items.map((category, index) => (
           <Animation className="w-full" speed={(category.id + 1) / 2} x={-100}>
             <CardWrapper
               key={category.id}
@@ -29,11 +61,16 @@ export const SkillsPage = () => {
             >
               <div className="w-full h-full flex flex-col items-center gap-5">
                 <span className="text-xl">{category.title}</span>
-                {/* <span className="p-10 rounded-full border-4">
-                  {category.level}%
-                </span> */}
-                <CircleProgress progress={category.level}/>
+                <CircleProgress progress={category.level} />
               </div>
+              {/* {!clicked && index === 1 && (
+                <div>
+                  <motion.div animate={controls}>
+                    <ClickSelect className="absolute bottom-7 right-7" />
+                  </motion.div>
+                  <Cursor className="absolute bottom-5 right-5" />
+                </div>
+              )} */}
             </CardWrapper>
           </Animation>
         ))}
