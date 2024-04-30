@@ -34,7 +34,7 @@ export const PortfolioCard: FC<IPortfolioCardProps> = ({
       <div className="py-5 px-7 flex flex-col gap-2">
         <span className="font-semibold text-xl">{title}</span>
         <span className="text-base font-light">{desc}</span>
-        <div className="flex gap-2">
+        <div className="flex gap-2 flex-wrap">
           {stack?.map((item, i) => (
             <span
               key={i}

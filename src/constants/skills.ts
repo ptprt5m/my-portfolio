@@ -8,7 +8,7 @@ export const Skills = {
         id: 0,
         title: "Markup",
         level: 0,
-        items: ["HTML5", "SVG", "JSX"],
+        items: ["HTML5", "SVG", "JSX/TSX", "Forms", "SEO"],
       },
       {
         id: 1,
@@ -21,6 +21,7 @@ export const Skills = {
           "BEM",
           "styled-components",
           "Tailwind CSS",
+          "Framer motion",
         ],
       },
       {
@@ -51,7 +52,7 @@ export const Skills = {
         id: 0,
         title: "Разметка",
         level: 85,
-        items: ["HTML5", "SVG", "JSX"],
+        items: ["HTML5", "SVG", "JSX/TSX", "Forms", "SEO"],
       },
       {
         id: 1,
@@ -64,6 +65,7 @@ export const Skills = {
           "BEM",
           "styled-components",
           "Tailwind CSS",
+          "Framer motion",
         ],
       },
       {

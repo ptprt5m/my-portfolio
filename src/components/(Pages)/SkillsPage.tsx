@@ -37,7 +37,7 @@ export const SkillsPage = () => {
         ))}
       </div>
       <Animation speed={Skills[language].items.length} y={100}>
-        <CardWrapper className="max-w-max" useRefLogic={false}>
+        <div className="max-w-max py-6 px-10">
           {Skills[language].items.map(
             (category) =>
               category.id === selectCategory && (
@@ -55,7 +55,7 @@ export const SkillsPage = () => {
                 </div>
               )
           )}
-        </CardWrapper>
+        </div>
       </Animation>
     </PageLayout>
   );

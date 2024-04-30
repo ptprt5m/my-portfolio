@@ -16,11 +16,11 @@ export const PortfolioPage = () => {
     <PageLayout pageTitle={PortfolioConst[language].title}>
       <div className="grid grid-cols-3 w-full gap-10">
         {PortfolioConst[language].items.map((site) => (
-          <ScaleAnimation speed={site.id}>
+          <ScaleAnimation speed={site.id + 1}>
             <PortfolioCard {...site} />
           </ScaleAnimation>
         ))}
-        <ScaleAnimation speed={PortfolioConst[language].items.length}>
+        <ScaleAnimation speed={PortfolioConst[language].items.length + 1}>
           <EmptyPortfolioCard />
         </ScaleAnimation>
       </div>

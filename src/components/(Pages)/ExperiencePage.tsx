@@ -14,7 +14,7 @@ export const ExperiencePage = () => {
     <PageLayout pageTitle={ExperienceConst[language].title}>
       <div className="w-full flex flex-col gap-10">
         {ExperienceConst[language].items.map((item, i) => (
-          <Animation speed={i}>
+          <Animation speed={i + 1} y={-100}>
             <CardWrapper
               key={item.company}
               className="flex flex-col gap-3 w-full max-w-full"
