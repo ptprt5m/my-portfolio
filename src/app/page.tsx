@@ -3,13 +3,13 @@ import { CardWrapper } from "@/components";
 
 export default function Home() {
   return (
-    <div className="absolute top-0 h-screen flex flex-col items-center justify-center ">
-      <Animation y={-100}>
+    <div className="absolute top-0 h-screen flex flex-col items-center justify-center">
+      <Animation y={-100} className="z-20">
         <CardWrapper size="medium">
           <MainCard />
         </CardWrapper>
       </Animation>
-      {/* <FlyingElements /> */}
+      <FlyingElements />
     </div>
   );
 }

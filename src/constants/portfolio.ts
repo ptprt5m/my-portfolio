@@ -1,4 +1,5 @@
 import { LANGUAGES } from "./language";
+import { TECHNOLOGY_TITLE } from "./skills";
 
 export const Portfolio = {
   [LANGUAGES.EN]: {
@@ -9,7 +10,12 @@ export const Portfolio = {
         url: "/",
         title: "This site",
         desc: "Frontend developer's business card site",
-        stack: ["next.js", "tailwind", "framer motion", "vanilla-tilt"],
+        stack: [
+          TECHNOLOGY_TITLE.nextJs,
+          TECHNOLOGY_TITLE.tailwindCss,
+          TECHNOLOGY_TITLE.framerMotion,
+          TECHNOLOGY_TITLE.vanillaTilt,
+        ],
         img: "/portfolio.png",
       },
       {
@@ -17,7 +23,11 @@ export const Portfolio = {
         url: "https://21-sport.ru",
         title: "21 Sport",
         desc: "Online store of sportswear, shoes and accessories",
-        stack: ["react", "redux-toolkit"],
+        stack: [
+          TECHNOLOGY_TITLE.react,
+          TECHNOLOGY_TITLE.reduxToolkit,
+          TECHNOLOGY_TITLE.sass,
+        ],
         img: "/21-sport.png",
       },
       {
@@ -25,7 +35,11 @@ export const Portfolio = {
         url: "https://syktyvkar.vercel.app",
         title: "City of Syktyvkar",
         desc: "Website of the beautiful city of Syktyvkar, the capital of the Komi Republic",
-        stack: ["next.js", "redux-toolkit", "tailwind"],
+        stack: [
+          TECHNOLOGY_TITLE.nextJs,
+          TECHNOLOGY_TITLE.reduxToolkit,
+          TECHNOLOGY_TITLE.tailwindCss,
+        ],
         img: "/syktyvkar.png",
       },
     ],
@@ -38,7 +52,12 @@ export const Portfolio = {
         url: "/",
         title: "Этот сайт",
         desc: "Сайт-визитка Frontend-разработчика",
-        stack: ["next.js", "tailwind", "framer motion", "vanilla-tilt"],
+        stack: [
+          TECHNOLOGY_TITLE.nextJs,
+          TECHNOLOGY_TITLE.tailwindCss,
+          TECHNOLOGY_TITLE.framerMotion,
+          TECHNOLOGY_TITLE.vanillaTilt,
+        ],
         img: "/portfolio.png",
       },
       {
@@ -46,7 +65,11 @@ export const Portfolio = {
         url: "https://21-sport.ru",
         title: "21 спорт",
         desc: "Интернет магазин спортивной одежды, обуви и аксессуаров",
-        stack: ["react", "redux-toolkit"],
+        stack: [
+          TECHNOLOGY_TITLE.react,
+          TECHNOLOGY_TITLE.reduxToolkit,
+          TECHNOLOGY_TITLE.sass,
+        ],
         img: "/21-sport.png",
       },
       {
@@ -54,7 +77,11 @@ export const Portfolio = {
         url: "https://syktyvkar.vercel.app",
         title: "Город Сыктывкар",
         desc: "Сайт-визитка прекрасного города Сыктывкар, столицы Республики Коми",
-        stack: ["next.js", "redux-toolkit", "tailwind"],
+        stack: [
+          TECHNOLOGY_TITLE.nextJs,
+          TECHNOLOGY_TITLE.reduxToolkit,
+          TECHNOLOGY_TITLE.tailwindCss,
+        ],
         img: "/syktyvkar.png",
       },
     ],
