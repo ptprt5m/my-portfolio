@@ -11,9 +11,9 @@ export const ExperiencePage = () => {
   const { language } = useLanguageContext();
 
   return (
-    <PageLayout pageTitle={ExperienceConst[language].title}>
+    <PageLayout pageTitle={ExperienceConst.title}>
       <div className="w-full flex flex-col gap-10">
-        {ExperienceConst[language].items.map((item, i) => (
+        {ExperienceConst.items.map((item, i) => (
           <Animation speed={i + 1} y={-100}>
             <CardWrapper
               key={item.company}

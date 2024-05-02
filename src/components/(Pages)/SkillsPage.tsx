@@ -14,7 +14,7 @@ import { motion, useAnimation } from "framer-motion";
 export const SkillsPage = () => {
   const { language } = useLanguageContext();
   const [selectCategory, setSelectCategory] = useState(
-    Skills[language].items[0].id
+    Skills.items[0].id
   );
   const toggleSelectCategory = (category: number) => {
     setSelectCategory(category);
@@ -50,9 +50,9 @@ export const SkillsPage = () => {
   // };
 
   return (
-    <PageLayout pageTitle={Skills[language].title}>
+    <PageLayout pageTitle={Skills.title}>
       <div className="grid grid-cols-4 gap-5 w-full">
-        {Skills[language].items.map((category, index) => (
+        {Skills.items.map((category, index) => (
           <Animation className="w-full" speed={(category.id + 1) / 2} x={-100}>
             <CardWrapper
               key={category.id}
@@ -75,9 +75,9 @@ export const SkillsPage = () => {
           </Animation>
         ))}
       </div>
-      <Animation speed={Skills[language].items.length} y={100}>
+      <Animation speed={Skills.items.length} y={100}>
         <div className="max-w-max py-6 px-10">
-          {Skills[language].items.map(
+          {Skills.items.map(
             (category) =>
               category.id === selectCategory && (
                 <div className="flex gap-5 flex-wrap">

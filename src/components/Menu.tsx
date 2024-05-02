@@ -11,7 +11,7 @@ export const Menu = () => {
   const pathname = usePathname();
   return (
     <div className="flex gap-8">
-      {Object.values(HeaderLinks[language]).map((link) => (
+      {Object.values(HeaderLinks).map((link) => (
         <Link
           href={link.href}
           className={cn("transition hover:opacity-60", {

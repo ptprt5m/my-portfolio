@@ -9,9 +9,9 @@ export const AboutCard = () => {
   const { language } = useLanguageContext();
 
   return (
-    <PageLayout pageTitle={About[language].title}>
+    <PageLayout pageTitle={About.title}>
       <div className="flex flex-col gap-3">
-        {Object.entries(About[language].items).map(([key, values], i) => (
+        {Object.entries(About.items).map(([key, values], i) => (
           <Animation speed={i} x={-100}>
             <div key={key}>
               {values.map((item, index) => (

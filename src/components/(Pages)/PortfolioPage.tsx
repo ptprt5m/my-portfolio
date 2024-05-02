@@ -13,14 +13,14 @@ export const PortfolioPage = () => {
   const { language } = useLanguageContext();
 
   return (
-    <PageLayout pageTitle={PortfolioConst[language].title}>
+    <PageLayout pageTitle={PortfolioConst.title}>
       <div className="grid grid-cols-3 w-full gap-10">
-        {PortfolioConst[language].items.map((site) => (
+        {PortfolioConst.items.map((site) => (
           <ScaleAnimation speed={site.id + 1}>
             <PortfolioCard {...site} />
           </ScaleAnimation>
         ))}
-        <ScaleAnimation speed={PortfolioConst[language].items.length + 1}>
+        <ScaleAnimation speed={PortfolioConst.items.length + 1}>
           <EmptyPortfolioCard />
         </ScaleAnimation>
       </div>

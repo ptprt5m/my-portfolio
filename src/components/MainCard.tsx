@@ -14,10 +14,10 @@ export const MainCard = () => {
         <Animation x={-100} speed={2}>
           <div className="flex flex-col gap-1">
             <span className="text-4xl font-semibold">
-              {Contacts[language].firstName} <br />
-              {Contacts[language].lastName}
+              {Contacts.firstName} <br />
+              {Contacts.lastName}
             </span>
-            <span className="text-xl ">{Contacts[language].profession}</span>
+            <span className="text-xl ">{Contacts.profession}</span>
           </div>
         </Animation>
 
@@ -31,25 +31,25 @@ export const MainCard = () => {
         <div className="flex gap-1 items-center justify-between bg-white/[.45] dark:bg-white/[.15] py-2 px-6 rounded-xl">
           <div className="flex gap-1.5 items-center">
             <Location />
-            <span>{Contacts[language].location}</span>
+            <span>{Contacts.location}</span>
           </div>
           <span className="flex gap-3 items-center">
             <a
-              href={Contacts[language].github}
+              href={Contacts.github}
               className="transition hover:scale-125"
               target="_blank"
             >
               <GitHub />
             </a>
             <a
-              href={Contacts[language].telegramLink}
+              href={Contacts.telegramLink}
               className="transition hover:scale-125"
               target="_blank"
             >
               <Telegram />
             </a>
             <a
-              href={`mailto:${Contacts[language].mail}`}
+              href={`mailto:${Contacts.mail}`}
               className="transition hover:scale-125"
               target="_blank"
             >
