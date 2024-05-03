@@ -1,4 +1,4 @@
-import { LanguageToggler } from ".";
+import { LanguageToggler } from "./LanguageToggle";
 import { Menu } from "./Menu";
 import { ThemeToggler } from "./ThemeToggler";
 

@@ -5,9 +5,11 @@ import { useLanguageContext } from "@/context";
 import { cn } from "@/utils";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useTranslation } from 'next-i18next'
 
 export const Menu = () => {
   const { language } = useLanguageContext();
+  const { t } = useTranslation('common')
   const pathname = usePathname();
   return (
     <div className="flex gap-8">
@@ -18,7 +20,7 @@ export const Menu = () => {
             "text-slate-400": pathname === link.href,
           })}
         >
-          {link.title}
+          {t(link.title)}
         </Link>
       ))}
     </div>
