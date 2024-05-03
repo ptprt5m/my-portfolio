@@ -51,7 +51,7 @@ export const SkillsPage = () => {
 
   return (
     <PageLayout pageTitle={Skills[language].title}>
-      <div className="grid grid-cols-4 gap-5 w-full">
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-5 w-full">
         {Skills[language].items.map((category, index) => (
           <Animation className="w-full" speed={(category.id + 1) / 2} x={-100}>
             <CardWrapper

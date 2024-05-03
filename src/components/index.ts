@@ -10,6 +10,8 @@ export * from "./EmptyPortfolioCard";
 export * from "./PortfolioCard";
 export * from "./Animation";
 export * from "./ScaleAnimation";
+export * from "./BurgerBtnIcon";
+export * from "./CloseIcon";
 
 export * from "./(Pages)/PortfolioPage";
 export * from "./(Pages)/SkillsPage";

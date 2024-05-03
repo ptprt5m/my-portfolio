@@ -4,7 +4,13 @@ import { useTheme } from "@/hooks";
 import { ThemeVariants } from "@/models";
 import { motion } from "framer-motion";
 
-export const CircleProgress = ({ progress }: { progress: number }) => {
+export const CircleProgress = ({
+  progress,
+  size = 150,
+}: {
+  progress: number;
+  size?: number;
+}) => {
   const radius = 70;
   const circumference = 2 * Math.PI * radius;
   const strokeWidth = 10;
@@ -12,7 +18,7 @@ export const CircleProgress = ({ progress }: { progress: number }) => {
   const { theme } = useTheme();
 
   return (
-    <svg width="150" height="150" className="circle transform -rotate-90">
+    <svg width={size} height={size} className="circle transform -rotate-90">
       <circle
         stroke={theme === ThemeVariants.light ? "#cbd5e1" : "#475569"}
         fill="transparent"
