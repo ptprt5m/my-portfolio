@@ -26,7 +26,7 @@ export const Header = () => {
           <MenuLinks />
         </div>
 
-        <div className="flex gap-5 items-center w-full justify-between lg:justify-end">
+        <div className="flex gap-5 items-center w-full lg:w-auto justify-between lg:justify-end">
           <LanguageToggler />
           <ThemeToggler />
           <div className="block lg:hidden">

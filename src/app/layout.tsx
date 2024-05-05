@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          "text-slate-700 dark:text-slate-100 font-medium text-lg from-zinc-200 to-zinc-50 bg-gradient-to-tl dark:from-slate-900 dark:to-slate-700 min-h-screen max-w-screen-xl m-auto",
+          "text-slate-800 text-base dark:text-slate-100 font-medium sm:text-lg from-zinc-200 to-zinc-50 bg-gradient-to-tl dark:from-slate-900 dark:to-slate-700 min-h-screen max-w-screen-xl m-auto",
           font.className
         )}
       >
@@ -30,9 +30,7 @@ export default function RootLayout({
           <LanguageProvider>
             <Header />
             <main className="flex flex-col items-center justify-center h-full">
-              <div className="px-10 pt-12 pb-48 w-full flex items-center justify-center h-full">
                 {children}
-              </div>
             </main>
           </LanguageProvider>
         </ThemeProvider>
