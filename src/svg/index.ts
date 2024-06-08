@@ -7,3 +7,8 @@ export * from "./star";
 export * from "./target";
 export * from "./cursor";
 export * from "./clickSelect";
+export * from "./AboutSVG";
+export * from "./ExpSVG";
+export * from "./HomeSVG";
+export * from "./PortfolioSVG";
+export * from "./SkillsSVG";
