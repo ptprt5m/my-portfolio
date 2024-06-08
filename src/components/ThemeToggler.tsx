@@ -18,8 +18,8 @@ export const ThemeToggler: FC<IBasicProps> = ({ className }) => {
       <div className={cn("transition hover:opacity-75", className)}>
         <Image
           src={theme === "light" ? "/moon.png" : "/sun.png"}
-          width={30}
-          height={30}
+          width={27}
+          height={27}
           alt={`${theme} theme switch`}
         />
       </div>

@@ -32,11 +32,11 @@ export const Header = () => {
       })}
     >
       <div className="flex px-10 py-4 md:py-6 w-full m-auto justify-between z-20 max-w-screen-xl">
-        <div className="hidden lg:block w-full">
+        <div className="hidden md:block w-full">
           <MenuLinks />
         </div>
 
-        <div className="flex gap-5 items-center w-full lg:w-auto justify-between lg:justify-end">
+        <div className="flex gap-5 items-center w-full md:w-auto justify-between md:justify-end">
           <LanguageToggler />
           <ThemeToggler />
         </div>

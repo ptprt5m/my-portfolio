@@ -12,6 +12,7 @@ export * from "./Animation";
 export * from "./ScaleAnimation";
 export * from "./BurgerBtnIcon";
 export * from "./CloseIcon";
+export * from "./ExperienceInfo";
 
 export * from "./(Pages)/PortfolioPage";
 export * from "./(Pages)/SkillsPage";

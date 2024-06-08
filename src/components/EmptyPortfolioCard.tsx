@@ -1,5 +1,5 @@
 export const EmptyPortfolioCard = () => (
-  <a className="border border-dashed border-slate-400 dark:border-slate-500 overflow-hidden rounded-xl flex flex-col cursor-not-allowed h-full">
+  <a className="border border-dashed max-w-lg m-auto border-slate-400 dark:border-slate-500 overflow-hidden rounded-xl flex flex-col cursor-not-allowed h-full">
     <div className="w-full h-48 bg-slate-300 dark:bg-slate-700 flex justify-center align-middle items-center">
         <span className="text-slate-400">soon...</span>
     </div>

@@ -2,10 +2,10 @@
 
 import { Experience as ExperienceConst } from "@/constants";
 import { useLanguageContext } from "@/context";
-import { Coding, Location, Star, Target } from "@/svg";
 import { CardWrapper } from "../CardWrapper";
 import PageLayout from "./layout";
 import { Animation } from "../Animation";
+import { ExperienceInfo } from "../ExperienceInfo";
 
 export const ExperiencePage = () => {
   const { language } = useLanguageContext();
@@ -14,41 +14,21 @@ export const ExperiencePage = () => {
     <PageLayout pageTitle={ExperienceConst[language].title}>
       <div className="w-full flex flex-col gap-10">
         {ExperienceConst[language].items.map((item, i) => (
-          <Animation speed={i + 1} y={-100}>
-            <CardWrapper
-              key={item.company}
-              className="flex flex-col gap-3 w-full max-w-full"
-              useRefLogic={false}
-            >
-              <h2 className="text-2xl">{item.company}</h2>
-              {item.desc && <p>{item.desc}</p>}
-              <span>{item.duration}</span>
-              <div className="flex gap-3 flex-wrap leading-5">
-                <span className="py-1 px-4 rounded-xl border border-slate-600 dark:border-slate-400 flex gap-1 items-center">
-                  <Location size={17} /> {item.location}
-                </span>
-                <span className="py-1 px-4 rounded-xl border border-slate-600 dark:border-slate-400 flex gap-1 items-center">
-                  <Target size={22} /> {item.workFormat}
-                </span>
-                <span className="py-1 px-4 rounded-xl border border-slate-600 dark:border-slate-400 flex gap-1 items-center">
-                  <Coding size={23} /> {item.role}
-                </span>
-                <span className="py-1 px-4 rounded-xl border border-slate-600 dark:border-slate-400 flex gap-1 items-center">
-                  <Star size={22} /> {item.level}
-                </span>
+          <>
+            <Animation speed={i + 1} y={-100}>
+              <div className="flex flex-col gap-3 w-full max-w-full md:hidden">
+                <ExperienceInfo {...item} />
               </div>
-              <div className="flex gap-3 w-full flex-wrap">
-                {item.skills.map((skill, i) => (
-                  <span
-                    key={i}
-                    className="py-0.5 px-4 bg-slate-300 dark:bg-slate-800 rounded-xl"
-                  >
-                    {skill}
-                  </span>
-                ))}
-              </div>
-            </CardWrapper>
-          </Animation>
+              <CardWrapper
+                key={item.company}
+                className="hidden md:flex flex-col gap-3 w-full max-w-full"
+                useRefLogic={false}
+              >
+                <ExperienceInfo {...item} />
+              </CardWrapper>
+            </Animation>
+            {i !== ExperienceConst[language].items.length - 1 && <div className="w-full bg-slate-400 h-0.5 block md:hidden"></div>}
+          </>
         ))}
       </div>
     </PageLayout>
