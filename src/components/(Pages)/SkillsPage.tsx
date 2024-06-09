@@ -4,79 +4,81 @@ import { Skills } from "@/constants";
 import { useLanguageContext } from "@/context";
 import PageLayout from "./layout";
 import { CardWrapper } from "../CardWrapper";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Animation } from "../Animation";
 import { ScaleAnimation } from "../ScaleAnimation";
 import { CircleProgress } from "../CircleProgress";
 import { ClickSelect, Cursor } from "@/svg";
-import { motion, useAnimation } from "framer-motion";
+import { motion } from "framer-motion";
 
 export const SkillsPage = () => {
   const { language } = useLanguageContext();
   const [selectCategory, setSelectCategory] = useState(
     Skills[language].items[0].id
   );
+  const [isCursorVisible, setIsCursorVisible] = useState(true);
+
   const toggleSelectCategory = (category: number) => {
     setSelectCategory(category);
+    setIsCursorVisible(false);
   };
-
-  // const controls = useAnimation();
-  // const [clicked, setClicked] = useState(false);
-
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     controls.start({
-  //       opacity: 1,
-  //       transition: { duration: 0.5 },
-  //     });
-  //     const interval = setInterval(() => {
-  //       controls.start({
-  //         opacity: [1, 0, 1],
-  //         transition: { duration: 0.5 },
-  //       });
-  //     }, 1000);
-  //     return () => clearInterval(interval);
-  //   }, 1000);
-
-  //   return () => clearTimeout(timer);
-  // }, [controls]);
-
-  // const handleClick = () => {
-  //   setClicked(true);
-  //   controls.start({
-  //     opacity: 0,
-  //     transition: { duration: 0.5 },
-  //   });
-  // };
 
   return (
     <PageLayout pageTitle={Skills[language].title}>
-      <div className="grid grid-cols-1 lg:grid-cols-4 gap-5 w-full">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 w-full">
         {Skills[language].items.map((category, index) => (
           <Animation className="w-full" speed={(category.id + 1) / 2} x={-100}>
+            <div className="flex flex-col gap-3 w-full max-w-full md:hidden">
+              <div
+                className="w-full h-full flex flex-col items-center"
+                onClick={() => toggleSelectCategory(category.id)}
+              >
+                <span className="text-xl">{category.title}</span>
+                <CircleProgress progress={category.level} />
+              </div>
+            </div>
             <CardWrapper
               key={category.id}
-              className="cursor-pointer"
+              className="hidden md:flex cursor-pointer w-full max-w-full"
               onClick={() => toggleSelectCategory(category.id)}
             >
               <div className="w-full h-full flex flex-col items-center gap-5">
                 <span className="text-xl">{category.title}</span>
                 <CircleProgress progress={category.level} />
               </div>
-              {/* {!clicked && index === 1 && (
-                <div>
-                  <motion.div animate={controls}>
-                    <ClickSelect className="absolute bottom-7 right-7" />
-                  </motion.div>
-                  <Cursor className="absolute bottom-5 right-5" />
-                </div>
-              )} */}
             </CardWrapper>
+
+            {isCursorVisible && index === 1 && (
+              <motion.div
+                className="relative"
+                initial={{ x: 0, y: 0 }}
+                animate={{ x: [0, -10, 0], y: [0, -10, 0] }}
+                transition={{
+                  repeat: Infinity,
+                  repeatType: "loop",
+                  duration: 2.5,
+                }}
+              >
+                <motion.div
+                  initial={{ opacity: 1 }}
+                  animate={{ opacity: [1, 0, 1] }}
+                  transition={{
+                    repeat: Infinity,
+                    repeatType: "loop",
+                    times: [0, 0.1, 0.6, 1],
+                    duration: 3,
+                  }}
+                >
+                  <ClickSelect className="absolute bottom-2 right-2 md:bottom-7 md:right-7" />
+                </motion.div>
+                <Cursor className="absolute bottom-0 right-0 md:bottom-5 md:right-5" />
+              </motion.div>
+            )}
           </Animation>
         ))}
       </div>
       <Animation speed={Skills[language].items.length} y={100}>
-        <div className="max-w-max py-6 px-10">
+        <div className="max-w-max md:py-6 md:px-10">
           {Skills[language].items.map(
             (category) =>
               category.id === selectCategory && (

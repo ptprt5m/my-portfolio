@@ -11,9 +11,9 @@ export const CircleProgress = ({
   progress: number;
   size?: number;
 }) => {
-  const radius = 70;
+  const radius = 50;
   const circumference = 2 * Math.PI * radius;
-  const strokeWidth = 10;
+  const strokeWidth = 8;
 
   const { theme } = useTheme();
 
@@ -24,8 +24,8 @@ export const CircleProgress = ({
         fill="transparent"
         strokeWidth={strokeWidth}
         r={radius}
-        cx="75"
-        cy="75"
+        cx={size / 2}
+        cy={size / 2}
       />
       <motion.circle
         stroke={theme === ThemeVariants.light ? "#475569" : "#E2E8F0"}
@@ -33,8 +33,8 @@ export const CircleProgress = ({
         strokeWidth={strokeWidth}
         strokeLinecap="round"
         r={radius}
-        cx="75"
-        cy="75"
+        cx={size / 2}
+        cy={size / 2}
         strokeDasharray={circumference}
         initial={{ strokeDashoffset: circumference }}
         animate={{
@@ -47,7 +47,7 @@ export const CircleProgress = ({
         y="50%"
         textAnchor="middle"
         fill={theme === ThemeVariants.light ? "#334454" : "#E2E8F0"}
-        fontSize="20px"
+        fontSize="16px"
         dy=".3em"
         className="transform origin-center rotate-90"
       >
