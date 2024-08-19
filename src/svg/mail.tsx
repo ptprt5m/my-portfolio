@@ -1,27 +1,18 @@
 export const Mail = () => (
   <svg
-    width="38px"
-    height="38px"
+    width="39px"
+    height="39px"
     viewBox="0 0 24 24"
-    fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    id="mail"
   >
     <path
-      d="M4 7.00005L10.2 11.65C11.2667 12.45 12.7333 12.45 13.8 11.65L20 7"
-      stroke="currentColor"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-    />
-    <rect
-      x="3"
-      y="5"
-      width="18"
-      height="14"
-      rx="2"
-      stroke="currentColor"
-      stroke-width="1.5"
-      stroke-linecap="round"
-    />
+      d="M22,8.32V18a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V8.69L4,9.78l7.52,4.1A1,1,0,0,0,12,14a1,1,0,0,0,.5-.14L20,9.49Z"
+      style={{fill: "currentColor"}}
+    ></path>
+    <path
+      d="M22,6h0L20,7.18l-8,4.67L4,7.5,2,6.4V6A2,2,0,0,1,4,4H20A2,2,0,0,1,22,6Z"
+      style={{fill: "currentColor"}}
+    ></path>
   </svg>
 );
