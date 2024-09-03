@@ -28,7 +28,7 @@ export const MainCard = () => {
         </Animation>
       </div>
       <Animation y={100} speed={4}>
-        <div className="shadow-[0_8px_30px_rgb(0,0,0,0.12)] flex flex-col sm:flex-row gap-2 items-center justify-between sm:bg-white/[.45] sm:dark:bg-white/[.15] py-2 px-6 rounded-xl">
+        <div className="sm:shadow-[0_8px_30px_rgb(0,0,0,0.12)] flex flex-col sm:flex-row gap-2 items-center justify-between sm:bg-white/[.45] sm:dark:bg-white/[.15] py-2 px-6 rounded-xl">
           <div className="flex gap-1.5 items-center">
             <Location />
             <span>{Contacts[language].location}</span>
