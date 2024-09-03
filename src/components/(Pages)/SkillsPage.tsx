@@ -27,7 +27,12 @@ export const SkillsPage = () => {
     <PageLayout pageTitle={Skills[language].title}>
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 w-full">
         {Skills[language].items.map((category, index) => (
-          <Animation className="w-full" speed={(category.id + 1) / 2} x={-100}>
+          <Animation
+            key={category.id}
+            className="w-full"
+            speed={(category.id + 1) / 2}
+            x={-100}
+          >
             <div className="flex flex-col gap-3 w-full max-w-full md:hidden">
               <div
                 className="w-full h-full flex flex-col items-center"
@@ -82,9 +87,9 @@ export const SkillsPage = () => {
           {Skills[language].items.map(
             (category) =>
               category.id === selectCategory && (
-                <div className="flex gap-5 flex-wrap">
+                <div key={category.id} className="flex gap-5 flex-wrap">
                   {category.items.map((skill, i) => (
-                    <ScaleAnimation speed={(i + 1) / 3}>
+                    <ScaleAnimation key={i} speed={(i + 1) / 3}>
                       <span
                         key={i}
                         className="py-1 px-4 bg-slate-300 dark:bg-slate-600 rounded-xl"
