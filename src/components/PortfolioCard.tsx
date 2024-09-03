@@ -18,11 +18,7 @@ export const PortfolioCard: FC<IPortfolioCardProps> = ({
   desc,
   stack,
 }) => (
-  <a
-    key={id}
-    href={url}
-    target="_blank"
-  >
+  <a key={id} href={url} target="_blank">
     <CardWrapper className="flex flex-col p-0 h-full rounded-2xl">
       <Image
         src={img}
@@ -32,7 +28,7 @@ export const PortfolioCard: FC<IPortfolioCardProps> = ({
         className="w-full h-48 object-cover"
       />
       <div className="py-5 px-7 flex flex-col gap-2">
-        <span className="font-semibold text-xl">{title}</span>
+        <span className="font-medium text-xl">{title}</span>
         <span className="text-base font-light">{desc}</span>
         <div className="flex gap-2 flex-wrap">
           {stack?.map((item, i) => (

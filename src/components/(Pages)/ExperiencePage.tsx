@@ -6,6 +6,7 @@ import { CardWrapper } from "../CardWrapper";
 import PageLayout from "./layout";
 import { Animation } from "../Animation";
 import { ExperienceInfo } from "../ExperienceInfo";
+import React from "react";
 
 export const ExperiencePage = () => {
   const { language } = useLanguageContext();
@@ -14,7 +15,7 @@ export const ExperiencePage = () => {
     <PageLayout pageTitle={ExperienceConst[language].title}>
       <div className="w-full flex flex-col gap-10">
         {ExperienceConst[language].items.map((item, i) => (
-          <>
+          <React.Fragment key={i}>
             <Animation speed={i + 1} y={-100}>
               <div className="flex flex-col gap-3 w-full max-w-full md:hidden">
                 <ExperienceInfo {...item} />
@@ -27,8 +28,10 @@ export const ExperiencePage = () => {
                 <ExperienceInfo {...item} />
               </CardWrapper>
             </Animation>
-            {i !== ExperienceConst[language].items.length - 1 && <div className="w-full bg-slate-400 h-0.5 block md:hidden"></div>}
-          </>
+            {i !== ExperienceConst[language].items.length - 1 && (
+              <div className="w-full bg-slate-400 h-0.5 block md:hidden"></div>
+            )}
+          </React.Fragment>
         ))}
       </div>
     </PageLayout>

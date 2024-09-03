@@ -32,7 +32,12 @@ export const MenuLinks = ({
   const { language } = useLanguageContext();
   const pathname = usePathname();
   return (
-    <div className={cn("flex gap-8 justify-between md:justify-start w-full", className)}>
+    <div
+      className={cn(
+        "flex gap-8 justify-between md:justify-start w-full",
+        className
+      )}
+    >
       {Object.values(HeaderLinks[language]).map((link) => (
         <Link
           key={link.title}

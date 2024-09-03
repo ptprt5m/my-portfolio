@@ -22,7 +22,7 @@ export const Experience = {
           TECHNOLOGY_TITLE.git,
           TECHNOLOGY_TITLE.github,
         ],
-        desc: "",
+        desc: "Разработка сайтов, ЛК и внутренних порталов для компаний. Используем собственный продукт компании в качестве бекенда с API для интеграции с нашими проектами. Технологический стек: Next.js, React, TailwindCSS",
       },
       {
         company: "Фриланс",
@@ -46,7 +46,7 @@ export const Experience = {
           TECHNOLOGY_TITLE.csCart,
           TECHNOLOGY_TITLE.tilda,
         ],
-        desc: "",
+        desc: "Реализация разнообразных проектов по разработке веб-приложений и интерфейсов. Специализация на создании адаптивных дизайнов, разработке пользовательских интерфейсов и интеграции с API. Использование современных технологий, включая React, Next.js, TailwindCSS и другие",
       },
       {
         company: "TopMarka1",
@@ -63,7 +63,7 @@ export const Experience = {
           TECHNOLOGY_TITLE.sass,
           TECHNOLOGY_TITLE.git,
         ],
-        desc: "Я присоединился к фулл-тайм проекту, где занимался версткой компонентов и разработкой логики приложения. В проекте использовались современные инструменты, такие как React, Redux, роутинг и lazyload и т.д.",
+        desc: "В рамках проекта на полной занятости выполнялись задачи по верстке компонентов и разработке логики приложения. В работе использовались современные технологии: React, Redux для управления состоянием, роутинг, lazy loading и другие инструменты для оптимизации производительности",
       },
       {
         company: "21 sport nn",
@@ -81,7 +81,7 @@ export const Experience = {
           TECHNOLOGY_TITLE.git,
           TECHNOLOGY_TITLE.sass,
         ],
-        desc: "Я разрабатывал React-приложение для компании, специализирующейся на продаже оригинальной спортивной одежды. Моя задача заключалась в создании фронтенда, в то время как бэкенд уже полностью готов и написан на Nest.js другим разработчиком. Проект был начат летом и разрабатывался постепенно. Окончательная версия была завершена в ноябре, и сайт продолжает поддерживаться до сих пор. В конце сентября магазин претерпел изменение концепции и названия, что потребовало корректировки некоторых аспектов.",
+        desc: "Разработка React-приложения для компании, занимающейся продажей оригинальной спортивной одежды. Основная задача заключалась в создании фронтенда на базе уже готового бекенда, разработанного на Nest.js. Проект стартовал летом и был завершен в ноябре, с дальнейшей поддержкой. В конце сентября, после ребрендинга и изменения концепции магазина, были внесены необходимые коррективы в проект",
       },
       {
         company: "АО «ГНИВЦ»",
@@ -98,7 +98,7 @@ export const Experience = {
           TECHNOLOGY_TITLE.sass,
           TECHNOLOGY_TITLE.jsx,
         ],
-        desc: "Во время стажировки в компании я занимался индивидуальной разработкой задач по JavaScript, TypeScript и верстке. Также я принимал участие в общем проекте, используя React, TypeScript и MobX. В команде было 4 человека, а также главный разработчик и ментор.",
+        desc: "Во время стажировки в компании выполнялись индивидуальные задачи по JavaScript, TypeScript и верстке. Также было участие в командном проекте с использованием React, TypeScript и MobX. Команда состояла из 4 человек, включая главного разработчика и ментора",
       },
       {
         company: "СГУ им. П. Сорокина",
@@ -114,7 +114,7 @@ export const Experience = {
           TECHNOLOGY_TITLE.php,
           TECHNOLOGY_TITLE.mySql,
         ],
-        desc: "Индивидуальная работа над дипломом + работа над внутренним студенческим порталом. В обоих случаях было выбрано направление WEB, конкретный стек технологий: JavaScript, HTML, CSS, PHP, MySQL",
+        desc: "Индивидуальная работа над дипломным проектом и разработка внутреннего студенческого портала. Оба проекта были выполнены в области веб-разработки с использованием стека технологий: JavaScript, HTML, CSS, PHP и MySQL",
       },
     ],
   },
@@ -138,7 +138,7 @@ export const Experience = {
           TECHNOLOGY_TITLE.git,
           TECHNOLOGY_TITLE.github,
         ],
-        desc: "",
+        desc: "Development of websites, user accounts, and internal portals for companies. Using the company's own product as a backend with an API for integration with our projects. Technology stack: Next.js, React, TailwindCSS",
       },
       {
         company: "Freelance",
@@ -162,7 +162,7 @@ export const Experience = {
           TECHNOLOGY_TITLE.csCart,
           TECHNOLOGY_TITLE.tilda,
         ],
-        desc: "",
+        desc: "Implementation of various web application and interface projects. Specialization in creating responsive designs, developing user interfaces, and integrating with APIs. Utilized modern technologies including React, Next.js, TailwindCSS, and others",
       },
       {
         company: "TopMarka1",
@@ -179,7 +179,7 @@ export const Experience = {
           TECHNOLOGY_TITLE.sass,
           TECHNOLOGY_TITLE.git,
         ],
-        desc: "Joined a full-time project, working on component styling and application logic using modern tools such as React, Redux, routing, and lazy loading.",
+        desc: "Performed component styling and application logic development as part of a full-time project. Employed modern technologies: React, Redux for state management, routing, lazy loading, and other performance optimization tools",
       },
       {
         company: "21 sport nn",
@@ -197,7 +197,7 @@ export const Experience = {
           TECHNOLOGY_TITLE.git,
           TECHNOLOGY_TITLE.sass,
         ],
-        desc: "Developed a React application for a company specializing in original sportswear. Frontend work was done while the backend was already completed using Nest.js by another developer. The project started in the summer and progressed gradually, with the final version presented in November. The website continues to be maintained.",
+        desc: "Development of a React application for a company specializing in selling original sportswear. The main task was to create the frontend based on an already completed backend developed with Nest.js. The project started in the summer and was completed in November, with ongoing support. In late September, after a rebranding and change in the store's concept, necessary adjustments were made to the project",
       },
       {
         company: "AO GNIVC",
@@ -214,7 +214,7 @@ export const Experience = {
           TECHNOLOGY_TITLE.sass,
           TECHNOLOGY_TITLE.jsx,
         ],
-        desc: "During the internship, I worked on individual tasks involving JavaScript, TypeScript, and frontend development. I also participated in a team project using React, TypeScript, and MobX. The team consisted of 4 people, including a lead developer and mentor.",
+        desc: "During the internship, worked on individual tasks involving JavaScript, TypeScript, and styling. Also participated in a team project using React, TypeScript, and MobX. The team consisted of 4 members, including a lead developer and a mentor",
       },
       {
         company: "Syktyvkar State University",
@@ -230,7 +230,7 @@ export const Experience = {
           TECHNOLOGY_TITLE.php,
           TECHNOLOGY_TITLE.mySql,
         ],
-        desc: "Individually worked on my diploma project and contributed to an internal student portal. Both projects were related to web development, using technologies such as JavaScript, HTML, CSS, PHP, and MySQL.",
+        desc: "Individual work on a diploma project and development of an internal student portal. Both projects were in the field of web development, using the technology stack: JavaScript, HTML, CSS, PHP, and MySQL",
       },
     ],
   },
