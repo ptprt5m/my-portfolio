@@ -12,3 +12,5 @@ export * from "./ExpSVG";
 export * from "./HomeSVG";
 export * from "./PortfolioSVG";
 export * from "./SkillsSVG";
+export * from "./StarSVG";
+export * from "./StarEmptySVG";

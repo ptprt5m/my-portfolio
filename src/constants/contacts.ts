@@ -7,9 +7,9 @@ export const Contacts = {
     telegramLink: "https://t.me/ptprt5m",
     telegramUsername: "@ptprt5m",
     mail: "pt.prt@ya.ru",
-    github: 'https://github.com/ptprt5m',
+    github: "https://github.com/ptprt5m",
     profession: "Frontend developer",
-    location: "Nizhnij Novgorod",
+    location: "Yaroslavl",
   },
   [LANGUAGES.RU]: {
     firstName: "Роман",
@@ -17,8 +17,8 @@ export const Contacts = {
     telegramLink: "https://t.me/ptprt5m",
     telegramUsername: "@ptprt5m",
     mail: "pt.prt@ya.ru",
-    github: 'https://github.com/ptprt5m',
+    github: "https://github.com/ptprt5m",
     profession: "Фронтенд разработчик",
-    location: "Нижний Новгород",
+    location: "Ярославль",
   },
 };
