@@ -15,6 +15,7 @@ interface IPortfolioCardProps {
     isPersonal: boolean;
     title: string;
   };
+  year: string;
 }
 export const PortfolioCard: FC<IPortfolioCardProps> = ({
   id,
@@ -24,6 +25,7 @@ export const PortfolioCard: FC<IPortfolioCardProps> = ({
   desc,
   stack,
   status,
+  year,
 }) => (
   <a key={id} href={url} target="_blank">
     <CardWrapper className="flex flex-col p-0 h-full rounded-2xl">
@@ -37,14 +39,18 @@ export const PortfolioCard: FC<IPortfolioCardProps> = ({
       <div className="py-5 px-7 flex flex-col gap-2">
         <span className="font-medium text-xl ">{title}</span>
         <span className="text-base font-light">{desc}</span>
-        <span className="text-sm font-normal text-slate-700 dark:text-slate-300 rounded-lg flex items-center gap-1.5 pb-1">
-          {status.isPersonal ? (
-            <StarSVG size={14} />
-          ) : (
-            <StarEmptySVG size={14} />
-          )}
-          {status.title}
-        </span>
+        <div className="flex gap-2 pb-1 items-center">
+          <span className="text-sm font-normal text-slate-700 dark:text-slate-300 rounded-lg flex items-center gap-1.5">
+            {status.isPersonal ? (
+              <StarSVG size={14} />
+            ) : (
+              <StarEmptySVG size={14} />
+            )}
+            {status.title}
+          </span>
+          <span className="rounded-full p-1 bg-slate-400 dark:bg-slate-500"></span>
+          <span className="text-sm font-medium">{year}</span>
+        </div>
         <div className="flex gap-2 flex-wrap items-center">
           {stack?.map((item, i) => (
             <span
