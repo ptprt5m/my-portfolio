@@ -15,4 +15,4 @@ export const Mail = () => (
       style={{fill: "currentColor"}}
     ></path>
   </svg>
-);
+)

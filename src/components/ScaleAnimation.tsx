@@ -1,7 +1,7 @@
-"use client";
+"use client"
 
-import { motion } from "framer-motion";
-import type { ReactNode } from "react";
+import { motion } from "framer-motion"
+import type { ReactNode } from "react"
 
 export const ScaleAnimation = ({
   children,
@@ -19,7 +19,7 @@ export const ScaleAnimation = ({
       opacity: 1,
       transition: { delay: speed * 0.2 },
     }),
-  };
+  }
 
   return (
     <motion.div
@@ -31,5 +31,5 @@ export const ScaleAnimation = ({
     >
       {children}
     </motion.div>
-  );
-};
+  )
+}

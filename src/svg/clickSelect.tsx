@@ -25,4 +25,4 @@ export const ClickSelect = ({
     <line className="cls-1" x1="7.26" y1="16.74" x2="3.87" y2="20.13" />
     <line className="cls-1" x1="7.26" y1="7.26" x2="3.87" y2="3.87" />
   </svg>
-);
+)

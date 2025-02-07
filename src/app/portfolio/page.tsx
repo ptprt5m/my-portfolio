@@ -1,5 +1,5 @@
-import { PortfolioPage } from "@/components";
+import { PortfolioPage } from "@/components"
 
 export default function Portfolio() {
-  return <PortfolioPage />;
+  return <PortfolioPage />
 }

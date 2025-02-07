@@ -15,4 +15,4 @@ export const StarSVG = ({ size = 24, className = "" }) => (
       </g>
     </g>
   </svg>
-);
+)

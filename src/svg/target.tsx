@@ -13,4 +13,4 @@ export const Target = ({ size = 30 }) => (
       fill="currentColor"
     />
   </svg>
-);
+)

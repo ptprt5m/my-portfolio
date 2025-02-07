@@ -13,4 +13,4 @@ export const Coding = ({ size = 30 }) => (
       fill="currentColor"
     />
   </svg>
-);
+)

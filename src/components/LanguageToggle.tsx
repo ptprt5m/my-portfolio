@@ -1,10 +1,10 @@
-"use client";
+"use client"
 
-import { LANGUAGES } from "@/constants";
-import { useLanguageContext } from "@/context";
+import { LANGUAGES } from "@/constants"
+import { useLanguageContext } from "@/context"
 
 export const LanguageToggler = () => {
-  const { language, setLanguage } = useLanguageContext();
+  const { language, setLanguage } = useLanguageContext()
 
   return (
     <div>
@@ -24,5 +24,5 @@ export const LanguageToggler = () => {
         </button>
       )}
     </div>
-  );
-};
+  )
+}

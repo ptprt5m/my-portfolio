@@ -1,6 +1,6 @@
-import { getTimeDifference } from "@/utils";
-import { LANGUAGES } from "./language";
-import { TECHNOLOGY_TITLE } from "./skills";
+import { getTimeDifference } from "@/utils"
+import { LANGUAGES } from "./language"
+import { TECHNOLOGY_TITLE } from "./skills"
 
 export const Experience = {
   [LANGUAGES.RU]: {
@@ -234,4 +234,4 @@ export const Experience = {
       },
     ],
   },
-};
+}

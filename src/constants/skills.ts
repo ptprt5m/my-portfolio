@@ -1,4 +1,4 @@
-import { LANGUAGES } from "./language";
+import { LANGUAGES } from "./language"
 
 export const TECHNOLOGY_TITLE = {
   html: "HTML5",
@@ -36,7 +36,7 @@ export const TECHNOLOGY_TITLE = {
   shadcn: "Shadcn/ui",
   web3: "Web3",
   ethers: "Ethers",
-};
+}
 
 export const TECHNOLOGY_GROUPS = {
   markup: {
@@ -75,7 +75,7 @@ export const TECHNOLOGY_GROUPS = {
     web3: TECHNOLOGY_TITLE.web3,
     ethers: TECHNOLOGY_TITLE.ethers,
   },
-};
+}
 
 export const Skills = {
   [LANGUAGES.EN]: {
@@ -136,4 +136,4 @@ export const Skills = {
       },
     ],
   },
-};
+}

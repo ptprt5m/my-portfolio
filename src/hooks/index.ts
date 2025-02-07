@@ -1,2 +1,2 @@
-export * from "./useMousePosition";
-export * from "./useTheme";
+export * from "./useMousePosition"
+export * from "./useTheme"

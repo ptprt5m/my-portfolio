@@ -1,16 +1,16 @@
-"use client";
+"use client"
 
 import {
   EmptyPortfolioCard,
   PortfolioCard,
   ScaleAnimation,
-} from "@/components";
-import { Portfolio as PortfolioConst } from "@/constants";
-import { useLanguageContext } from "@/context";
-import PageLayout from "./layout";
+} from "@/components"
+import { Portfolio as PortfolioConst } from "@/constants"
+import { useLanguageContext } from "@/context"
+import PageLayout from "./layout"
 
 export const PortfolioPage = () => {
-  const { language } = useLanguageContext();
+  const { language } = useLanguageContext()
 
   return (
     <PageLayout pageTitle={PortfolioConst[language].title}>
@@ -25,5 +25,5 @@ export const PortfolioPage = () => {
         </ScaleAnimation>
       </div>
     </PageLayout>
-  );
-};
+  )
+}

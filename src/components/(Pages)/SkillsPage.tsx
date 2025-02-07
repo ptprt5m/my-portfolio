@@ -1,27 +1,27 @@
-"use client";
+"use client"
 
-import { Skills } from "@/constants";
-import { useLanguageContext } from "@/context";
-import PageLayout from "./layout";
-import { CardWrapper } from "../CardWrapper";
-import { useState } from "react";
-import { Animation } from "../Animation";
-import { ScaleAnimation } from "../ScaleAnimation";
-import { CircleProgress } from "../CircleProgress";
-import { ClickSelect, Cursor } from "@/svg";
-import { motion } from "framer-motion";
+import { Skills } from "@/constants"
+import { useLanguageContext } from "@/context"
+import PageLayout from "./layout"
+import { CardWrapper } from "../CardWrapper"
+import { useState } from "react"
+import { Animation } from "../Animation"
+import { ScaleAnimation } from "../ScaleAnimation"
+import { CircleProgress } from "../CircleProgress"
+import { ClickSelect, Cursor } from "@/svg"
+import { motion } from "framer-motion"
 
 export const SkillsPage = () => {
-  const { language } = useLanguageContext();
+  const { language } = useLanguageContext()
   const [selectCategory, setSelectCategory] = useState(
     Skills[language].items[0].id
-  );
-  const [isCursorVisible, setIsCursorVisible] = useState(true);
+  )
+  const [isCursorVisible, setIsCursorVisible] = useState(true)
 
   const toggleSelectCategory = (category: number) => {
-    setSelectCategory(category);
-    setIsCursorVisible(false);
-  };
+    setSelectCategory(category)
+    setIsCursorVisible(false)
+  }
 
   return (
     <PageLayout pageTitle={Skills[language].title}>
@@ -104,5 +104,5 @@ export const SkillsPage = () => {
         </div>
       </Animation>
     </PageLayout>
-  );
-};
+  )
+}

@@ -6,4 +6,4 @@ export const CloseIcon = ({ onClick }: { onClick: () => void }) => (
     <span className="h-1 w-7 absolute bg-slate-700 dark:bg-slate-200 rounded-xl transform rotate-45"></span>
     <span className="h-1 w-7 absolute bg-slate-700 dark:bg-slate-200 rounded-xl transform -rotate-45"></span>
   </div>
-);
+)

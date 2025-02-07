@@ -1,4 +1,4 @@
-import { LANGUAGES } from "./language";
+import { LANGUAGES } from "./language"
 
 export const HeaderLinks = {
   [LANGUAGES.EN]: {
@@ -55,4 +55,4 @@ export const HeaderLinks = {
       href: "/portfolio",
     },
   },
-};
+}

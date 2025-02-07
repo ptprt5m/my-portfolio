@@ -1,16 +1,16 @@
-"use client";
+"use client"
 
-import { useTheme } from "@/hooks";
-import type { IBasicProps } from "@/models";
-import { cn } from "@/utils";
-import Image from "next/image";
-import type { FC } from "react";
+import { useTheme } from "@/hooks"
+import type { IBasicProps } from "@/models"
+import { cn } from "@/utils"
+import Image from "next/image"
+import type { FC } from "react"
 
 export const ThemeToggler: FC<IBasicProps> = ({ className }) => {
-  const { theme, toggleTheme } = useTheme();
+  const { theme, toggleTheme } = useTheme()
 
   if (!theme) {
-    return null;
+    return null
   }
 
   return (
@@ -24,5 +24,5 @@ export const ThemeToggler: FC<IBasicProps> = ({ className }) => {
         />
       </div>
     </button>
-  );
-};
+  )
+}

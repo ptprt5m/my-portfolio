@@ -1,12 +1,12 @@
-"use client";
+"use client"
 
-import { HeaderLinks } from "@/constants";
-import { useLanguageContext } from "@/context";
-import { AboutSVG, ExpSVG, HomeSVG, PortfolioSVG, SkillsSVG } from "@/svg";
-import { cn } from "@/utils";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import type { ReactNode } from "react";
+import { HeaderLinks } from "@/constants"
+import { useLanguageContext } from "@/context"
+import { AboutSVG, ExpSVG, HomeSVG, PortfolioSVG, SkillsSVG } from "@/svg"
+import { cn } from "@/utils"
+import Link from "next/link"
+import { usePathname } from "next/navigation"
+import type { ReactNode } from "react"
 
 interface IICONS {
   [key: string]: ReactNode;
@@ -18,7 +18,7 @@ const ICONS: IICONS = {
   SkillsSVG: <SkillsSVG />,
   ExpSVG: <ExpSVG />,
   PortfolioSVG: <PortfolioSVG />,
-};
+}
 
 export const MenuLinks = ({
   className,
@@ -29,8 +29,8 @@ export const MenuLinks = ({
   onClick?: () => void;
   type?: "desktop" | "mobile";
 }) => {
-  const { language } = useLanguageContext();
-  const pathname = usePathname();
+  const { language } = useLanguageContext()
+  const pathname = usePathname()
   return (
     <div
       className={cn(
@@ -51,5 +51,5 @@ export const MenuLinks = ({
         </Link>
       ))}
     </div>
-  );
-};
+  )
+}

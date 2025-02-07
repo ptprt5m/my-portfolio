@@ -13,4 +13,4 @@ export const EmptyPortfolioCard = () => (
       </div>
     </div>
   </a>
-);
+)

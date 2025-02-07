@@ -1,5 +1,5 @@
-import { Coding, Location, Star, Target } from "@/svg";
-import type { FC } from "react";
+import { Coding, Location, Star, Target } from "@/svg"
+import type { FC } from "react"
 
 interface IExperienceInfo {
   company: string;
@@ -51,4 +51,4 @@ export const ExperienceInfo: FC<IExperienceInfo> = ({
       ))}
     </div>
   </>
-);
+)

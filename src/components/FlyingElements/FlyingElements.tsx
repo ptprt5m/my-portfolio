@@ -1,11 +1,11 @@
-"use client";
+"use client"
 
-import { useMousePosition } from "@/hooks";
-import { FlyingElement } from "./FlyingElement";
-import { Animation } from "../Animation";
+import { useMousePosition } from "@/hooks"
+import { FlyingElement } from "./FlyingElement"
+import { Animation } from "../Animation"
 
 export const FlyingElements = () => {
-  const { x, y } = useMousePosition();
+  const { x, y } = useMousePosition()
 
   return (
     <>
@@ -85,5 +85,5 @@ export const FlyingElements = () => {
     //     height={270}
     //   />
     // </>
-  );
-};
+  )
+}

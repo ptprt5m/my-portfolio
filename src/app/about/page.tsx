@@ -1,5 +1,5 @@
-import { AboutCard } from "@/components";
+import { AboutCard } from "@/components"
 
 export default function About() {
-  return <AboutCard />;
+  return <AboutCard />
 }

@@ -1,5 +1,5 @@
-import { LANGUAGES } from "./language";
-import { TECHNOLOGY_TITLE } from "./skills";
+import { LANGUAGES } from "./language"
+import { TECHNOLOGY_TITLE } from "./skills"
 
 export const Portfolio = {
   [LANGUAGES.EN]: {
@@ -168,4 +168,4 @@ export const Portfolio = {
       },
     ],
   },
-};
+}

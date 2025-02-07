@@ -1,8 +1,8 @@
-"use client";
+"use client"
 
-import { cn } from "@/utils";
-import Image from "next/image";
-import { type FC, useEffect, useState } from "react";
+import { cn } from "@/utils"
+import Image from "next/image"
+import { type FC, useEffect, useState } from "react"
 
 interface IFlyingElementProps {
   x: number;
@@ -21,20 +21,20 @@ export const FlyingElement: FC<IFlyingElementProps> = ({
   width,
   height,
 }) => {
-  const windowWidth = window.innerWidth;
-  const windowHeight = window.innerHeight;
+  const windowWidth = window.innerWidth
+  const windowHeight = window.innerHeight
 
   const generateRandomOffset = () =>
-    Math.floor(Math.random() * (50 - 15 + 1)) + 15;
+    Math.floor(Math.random() * (50 - 15 + 1)) + 15
 
-  const [offset, setOffset] = useState(generateRandomOffset());
+  const [offset, setOffset] = useState(generateRandomOffset())
 
   useEffect(() => {
-    setOffset(generateRandomOffset());
-  }, []);
+    setOffset(generateRandomOffset())
+  }, [])
 
-  const offsetX = (windowWidth / 2 - x) / offset;
-  const offsetY = (windowHeight / 2 - y) / offset;
+  const offsetX = (windowWidth / 2 - x) / offset
+  const offsetY = (windowHeight / 2 - y) / offset
   return (
     <Image
       src={src ?? "/circle.png"}
@@ -44,5 +44,5 @@ export const FlyingElement: FC<IFlyingElementProps> = ({
       className={cn("absolute", className ?? "top-0 left-0")}
       style={{ transform: `translate(${offsetX}px, ${offsetY}px)` }}
     />
-  );
-};
+  )
+}

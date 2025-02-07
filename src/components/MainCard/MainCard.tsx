@@ -1,14 +1,14 @@
-"use client";
+"use client"
 
-import { Contacts } from "@/constants";
-import { useLanguageContext } from "@/context";
-import { Location } from "@/svg";
-import Image from "next/image";
-import { Animation } from "../Animation";
-import { SocialLinks } from "./SocialLinks";
+import { Contacts } from "@/constants"
+import { useLanguageContext } from "@/context"
+import { Location } from "@/svg"
+import Image from "next/image"
+import { Animation } from "../Animation"
+import { SocialLinks } from "./SocialLinks"
 
 export const MainCard = () => {
-  const { language } = useLanguageContext();
+  const { language } = useLanguageContext()
   return (
     <div className="flex flex-col gap-7 sm:gap-14 relative">
       <div className="flex flex-col-reverse sm:flex-row items-center sm:items-start justify-between w-full gap-5 sm:gap-10">
@@ -37,5 +37,5 @@ export const MainCard = () => {
         </div>
       </Animation>
     </div>
-  );
-};
+  )
+}

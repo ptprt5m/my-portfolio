@@ -1,19 +1,19 @@
-import type { Metadata } from "next";
-import { Montserrat } from "next/font/google";
-import "./globals.css";
-import { Header } from "@/components";
-import { cn } from "@/utils";
-import { LanguageProvider } from "@/context";
-import { ThemeProvider } from "@/context/themeCtx";
-import { HeaderMobile } from "@/components/HeaderMobile";
+import type { Metadata } from "next"
+import { Montserrat } from "next/font/google"
+import "./globals.css"
+import { Header } from "@/components"
+import { cn } from "@/utils"
+import { LanguageProvider } from "@/context"
+import { ThemeProvider } from "@/context/themeCtx"
+import { HeaderMobile } from "@/components/HeaderMobile"
 
-const font = Montserrat({ subsets: ["latin"] });
+const font = Montserrat({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Roman Shcheglov Frontend Developer | Building modern web applications",
   description: "Experienced frontend developer from Nizhnij Novgorod specializing in building efficient and modern web applications using React, Next.js, and TailwindCSS. Check out my portfolio to see how I can help your business",
   keywords: ['Roman Shcheglov, Web Developer, Frontend developer, React, Next.js, TailwindCSS, Website development, Web application development, Developer portfolio']
-};
+}
 
 export default function RootLayout({
   children,
@@ -39,5 +39,5 @@ export default function RootLayout({
         </ThemeProvider>
       </body>
     </html>
-  );
+  )
 }

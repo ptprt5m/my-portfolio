@@ -1,2 +1,2 @@
-export * from "./createClassNames";
-export * from "./getTimeDifference";
+export * from "./createClassNames"
+export * from "./getTimeDifference"

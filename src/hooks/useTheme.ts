@@ -1,5 +1,5 @@
-"use client";
+"use client"
 
-import { useThemeContext } from "@/context/themeCtx";
+import { useThemeContext } from "@/context/themeCtx"
 
-export const useTheme = () => useThemeContext();
+export const useTheme = () => useThemeContext()

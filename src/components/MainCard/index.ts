@@ -1,2 +1,2 @@
-export * from "./MainCard";
-export * from "./SocialLinks";
+export * from "./MainCard"
+export * from "./SocialLinks"

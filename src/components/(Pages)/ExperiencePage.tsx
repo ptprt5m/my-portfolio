@@ -1,15 +1,15 @@
-"use client";
+"use client"
 
-import { Experience as ExperienceConst } from "@/constants";
-import { useLanguageContext } from "@/context";
-import { CardWrapper } from "../CardWrapper";
-import PageLayout from "./layout";
-import { Animation } from "../Animation";
-import { ExperienceInfo } from "../ExperienceInfo";
-import React from "react";
+import { Experience as ExperienceConst } from "@/constants"
+import { useLanguageContext } from "@/context"
+import { CardWrapper } from "../CardWrapper"
+import PageLayout from "./layout"
+import { Animation } from "../Animation"
+import { ExperienceInfo } from "../ExperienceInfo"
+import React from "react"
 
 export const ExperiencePage = () => {
-  const { language } = useLanguageContext();
+  const { language } = useLanguageContext()
 
   return (
     <PageLayout pageTitle={ExperienceConst[language].title}>
@@ -35,5 +35,5 @@ export const ExperiencePage = () => {
         ))}
       </div>
     </PageLayout>
-  );
-};
+  )
+}

@@ -1,4 +1,4 @@
-import type { ReactNode } from "react";
+import type { ReactNode } from "react"
 
 export default function PageLayout({
   pageTitle,
@@ -14,5 +14,5 @@ export default function PageLayout({
         {children}
       </div>
     </div>
-  );
+  )
 }

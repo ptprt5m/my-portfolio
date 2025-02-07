@@ -1,4 +1,4 @@
-import { LANGUAGES } from "./language";
+import { LANGUAGES } from "./language"
 
 export const About = {
   [LANGUAGES.RU]: {
@@ -33,4 +33,4 @@ export const About = {
       ],
     },
   },
-};
+}

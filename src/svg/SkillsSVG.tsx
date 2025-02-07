@@ -1,5 +1,5 @@
-import type { IBaseSVGProps } from "@/models";
-import type { FC } from "react";
+import type { IBaseSVGProps } from "@/models"
+import type { FC } from "react"
 
 export const SkillsSVG: FC<IBaseSVGProps> = ({ size = 30, className }) => (
   <svg
@@ -14,4 +14,4 @@ export const SkillsSVG: FC<IBaseSVGProps> = ({ size = 30, className }) => (
       fill="currentColor"
     />
   </svg>
-);
+)

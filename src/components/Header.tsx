@@ -1,28 +1,28 @@
-"use client";
+"use client"
 
-import { useEffect, useState } from "react";
-import { LanguageToggler } from "./LanguageToggle";
-import { MenuLinks } from "./Menu";
-import { ThemeToggler } from "./ThemeToggler";
-import { cn } from "@/utils";
+import { useEffect, useState } from "react"
+import { LanguageToggler } from "./LanguageToggle"
+import { MenuLinks } from "./Menu"
+import { ThemeToggler } from "./ThemeToggler"
+import { cn } from "@/utils"
 
 export const Header = () => {
-  const [colorChange, setColorChange] = useState(false);
+  const [colorChange, setColorChange] = useState(false)
 
   const changeHeaderColor = () => {
     if (window.scrollY >= 100) {
-      setColorChange(true);
+      setColorChange(true)
     } else {
-      setColorChange(false);
+      setColorChange(false)
     }
-  };
+  }
 
   useEffect(() => {
-    window.addEventListener("scroll", changeHeaderColor);
+    window.addEventListener("scroll", changeHeaderColor)
     return () => {
-      window.removeEventListener("scroll", changeHeaderColor);
-    };
-  }, []);
+      window.removeEventListener("scroll", changeHeaderColor)
+    }
+  }, [])
 
   return (
     <header
@@ -42,5 +42,5 @@ export const Header = () => {
         </div>
       </div>
     </header>
-  );
-};
+  )
+}

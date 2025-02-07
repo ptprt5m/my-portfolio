@@ -18,4 +18,4 @@ export const Cursor = ({
       fill="currentColor"
     />
   </svg>
-);
+)

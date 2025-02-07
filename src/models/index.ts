@@ -1,2 +1,2 @@
-export * from "./IBasicProps";
-export * from "./ITheme";
+export * from "./IBasicProps"
+export * from "./ITheme"

@@ -1,5 +1,5 @@
-import { MainCard, Animation } from "@/components";
-import { CardWrapper } from "@/components";
+import { MainCard, Animation } from "@/components"
+import { CardWrapper } from "@/components"
 
 export default function Home() {
   return (
@@ -13,5 +13,5 @@ export default function Home() {
         <MainCard />
       </Animation>
     </div>
-  );
+  )
 }

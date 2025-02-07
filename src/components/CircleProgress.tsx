@@ -1,8 +1,8 @@
-"use client";
+"use client"
 
-import { useTheme } from "@/hooks";
-import { ThemeVariants } from "@/models";
-import { motion } from "framer-motion";
+import { useTheme } from "@/hooks"
+import { ThemeVariants } from "@/models"
+import { motion } from "framer-motion"
 
 export const CircleProgress = ({
   progress,
@@ -11,11 +11,11 @@ export const CircleProgress = ({
   progress: number;
   size?: number;
 }) => {
-  const radius = 50;
-  const circumference = 2 * Math.PI * radius;
-  const strokeWidth = 8;
+  const radius = 50
+  const circumference = 2 * Math.PI * radius
+  const strokeWidth = 8
 
-  const { theme } = useTheme();
+  const { theme } = useTheme()
 
   return (
     <svg width={size} height={size} className="circle transform -rotate-90">
@@ -54,5 +54,5 @@ export const CircleProgress = ({
         {progress}%
       </text>
     </svg>
-  );
-};
+  )
+}

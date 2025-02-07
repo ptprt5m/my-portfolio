@@ -1,4 +1,4 @@
-import { LANGUAGES } from "./language";
+import { LANGUAGES } from "./language"
 
 export const Contacts = {
   [LANGUAGES.EN]: {
@@ -21,4 +21,4 @@ export const Contacts = {
     profession: "Фронтенд разработчик",
     location: "Ярославль",
   },
-};
+}

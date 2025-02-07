@@ -22,4 +22,4 @@ export const GitHub = () => (
       </g>
     </g>
   </svg>
-);
+)

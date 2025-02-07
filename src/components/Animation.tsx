@@ -1,7 +1,7 @@
-"use client";
+"use client"
 
-import { motion } from "framer-motion";
-import type { ReactNode } from "react";
+import { motion } from "framer-motion"
+import type { ReactNode } from "react"
 
 export const Animation = ({
   children,
@@ -24,7 +24,7 @@ export const Animation = ({
       opacity: 1,
       transition: { delay: speed * 0.2 },
     }),
-  };
+  }
 
   return (
     <motion.div
@@ -36,5 +36,5 @@ export const Animation = ({
     >
       {children}
     </motion.div>
-  );
-};
+  )
+}

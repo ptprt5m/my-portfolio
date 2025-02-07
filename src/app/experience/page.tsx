@@ -1,5 +1,5 @@
-import { ExperiencePage } from "@/components";
+import { ExperiencePage } from "@/components"
 
 export default function Experience() {
-  return <ExperiencePage />;
+  return <ExperiencePage />
 }

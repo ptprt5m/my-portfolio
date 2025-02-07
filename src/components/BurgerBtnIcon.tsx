@@ -7,4 +7,4 @@ export const BurgerBtnIcon = ({ onClick }: { onClick: () => void }) => (
     <span className="h-1 w-7 bg-slate-700 dark:bg-slate-200 rounded-xl"></span>
     <span className="h-1 w-6 bg-slate-700 dark:bg-slate-200 rounded-xl"></span>
   </div>
-);
+)

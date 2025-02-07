@@ -1,12 +1,12 @@
-"use client";
+"use client"
 
-import { About } from "@/constants";
-import { useLanguageContext } from "@/context";
-import PageLayout from "./layout";
-import { Animation } from "../Animation";
+import { About } from "@/constants"
+import { useLanguageContext } from "@/context"
+import PageLayout from "./layout"
+import { Animation } from "../Animation"
 
 export const AboutCard = () => {
-  const { language } = useLanguageContext();
+  const { language } = useLanguageContext()
 
   return (
     <PageLayout pageTitle={About[language].title}>
@@ -22,5 +22,5 @@ export const AboutCard = () => {
         ))}
       </div>
     </PageLayout>
-  );
-};
+  )
+}

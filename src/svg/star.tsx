@@ -16,4 +16,4 @@ export const Star = ({ size = 30 }) => (
       fill="#1C274C"
     />
   </svg>
-);
+)

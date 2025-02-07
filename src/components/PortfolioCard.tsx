@@ -1,8 +1,8 @@
-import Image from "next/image";
-import type { FC } from "react";
-import { CardWrapper } from "./CardWrapper";
-import { StarEmptySVG, StarSVG } from "@/svg";
-import { cn } from "@/utils";
+import Image from "next/image"
+import type { FC } from "react"
+import { CardWrapper } from "./CardWrapper"
+import { StarEmptySVG, StarSVG } from "@/svg"
+import { cn } from "@/utils"
 
 interface IPortfolioCardProps {
   id: number;
@@ -27,7 +27,7 @@ export const PortfolioCard: FC<IPortfolioCardProps> = ({
   status,
   year,
 }) => (
-  <a key={id} href={url} target="_blank">
+  <a key={id} href={url} target="_blank" rel="noreferrer">
     <CardWrapper className="flex flex-col p-0 h-full rounded-2xl">
       <Image
         src={img}
@@ -64,4 +64,4 @@ export const PortfolioCard: FC<IPortfolioCardProps> = ({
       </div>
     </CardWrapper>
   </a>
-);
+)
