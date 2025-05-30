@@ -17,7 +17,7 @@ export const PortfolioPage = () => {
       <div className="grid grid-cols-1 lg:grid-cols-3 w-full gap-10">
         {PortfolioConst[language].items.map((site) => (
           <ScaleAnimation key={site.id} speed={site.id + 1}>
-            <PortfolioCard {...site} />
+            <PortfolioCard {...site} language={language} />
           </ScaleAnimation>
         ))}
         <ScaleAnimation speed={PortfolioConst[language].items.length + 1}>

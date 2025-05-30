@@ -25,8 +25,9 @@ export const Portfolio = {
       },
       {
         id: 1,
+        isDisabled: true,
         url: "https://21-sport.ru",
-        title: "21 Sport",
+        title: "21 Store",
         desc: "Online store of sportswear, shoes and accessories",
         status: {
           isPersonal: true,
@@ -108,8 +109,9 @@ export const Portfolio = {
       },
       {
         id: 1,
+        isDisabled: true,
         url: "https://21-sport.ru",
-        title: "21 спорт",
+        title: "21 стор",
         desc: "Интернет магазин спортивной одежды, обуви и аксессуаров",
         status: {
           isPersonal: true,

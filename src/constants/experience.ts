@@ -1,4 +1,3 @@
-import { getTimeDifference } from "@/utils"
 import { LANGUAGES } from "./language"
 import { TECHNOLOGY_TITLE } from "./skills"
 
@@ -21,6 +20,8 @@ export const Experience = {
           TECHNOLOGY_TITLE.tailwindCss,
           TECHNOLOGY_TITLE.git,
           TECHNOLOGY_TITLE.github,
+          TECHNOLOGY_TITLE.gitlab,
+          TECHNOLOGY_TITLE.shadcn,
         ],
         desc: "Разработка сайтов, ЛК и внутренних порталов для компаний. Используем собственный продукт компании в качестве бекенда с API для интеграции с нашими проектами. Технологический стек: Next.js, React, TailwindCSS",
       },
@@ -137,6 +138,8 @@ export const Experience = {
           TECHNOLOGY_TITLE.tailwindCss,
           TECHNOLOGY_TITLE.git,
           TECHNOLOGY_TITLE.github,
+          TECHNOLOGY_TITLE.gitlab,
+          TECHNOLOGY_TITLE.shadcn,
         ],
         desc: "Development of websites, user accounts, and internal portals for companies. Using the company's own product as a backend with an API for integration with our projects. Technology stack: Next.js, React, TailwindCSS",
       },

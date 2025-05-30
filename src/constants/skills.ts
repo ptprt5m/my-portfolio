@@ -54,6 +54,7 @@ export const TECHNOLOGY_GROUPS = {
     styledComponents: TECHNOLOGY_TITLE.styledComponents,
     tailwindCss: TECHNOLOGY_TITLE.tailwindCss,
     framerMotion: TECHNOLOGY_TITLE.framerMotion,
+    shadcn: TECHNOLOGY_TITLE.shadcn,
   },
   logic: {
     javascript: TECHNOLOGY_TITLE.javascript,
@@ -63,7 +64,6 @@ export const TECHNOLOGY_GROUPS = {
     redux: TECHNOLOGY_TITLE.redux,
     reduxToolkit: TECHNOLOGY_TITLE.reduxToolkit,
     zustand: TECHNOLOGY_TITLE.zustand,
-    shadcn: TECHNOLOGY_TITLE.shadcn,
   },
   utilities: {
     git: TECHNOLOGY_TITLE.git,
@@ -90,19 +90,19 @@ export const Skills = {
       {
         id: 1,
         title: "Styles",
-        level: 80,
+        level: 85,
         items: Object.values(TECHNOLOGY_GROUPS.styles),
       },
       {
         id: 2,
         title: "Logic",
-        level: 70,
+        level: 75,
         items: Object.values(TECHNOLOGY_GROUPS.logic),
       },
       {
         id: 3,
         title: "Utilities",
-        level: 60,
+        level: 65,
         items: Object.values(TECHNOLOGY_GROUPS.utilities),
       },
     ],
@@ -119,19 +119,19 @@ export const Skills = {
       {
         id: 1,
         title: "Стили",
-        level: 80,
+        level: 85,
         items: Object.values(TECHNOLOGY_GROUPS.styles),
       },
       {
         id: 2,
         title: "Логика",
-        level: 70,
+        level: 75,
         items: Object.values(TECHNOLOGY_GROUPS.logic),
       },
       {
         id: 3,
         title: "Утилиты",
-        level: 60,
+        level: 65,
         items: Object.values(TECHNOLOGY_GROUPS.utilities),
       },
     ],

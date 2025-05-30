@@ -3,6 +3,7 @@ import type { FC } from "react"
 import { CardWrapper } from "./CardWrapper"
 import { StarEmptySVG, StarSVG } from "@/svg"
 import { cn } from "@/utils"
+import { BasicMessages } from "@/constants"
 
 interface IPortfolioCardProps {
   id: number;
@@ -16,6 +17,8 @@ interface IPortfolioCardProps {
     title: string;
   };
   year: string;
+  isDisabled?: boolean;
+  language: string;
 }
 export const PortfolioCard: FC<IPortfolioCardProps> = ({
   id,
@@ -26,9 +29,21 @@ export const PortfolioCard: FC<IPortfolioCardProps> = ({
   stack,
   status,
   year,
+  isDisabled,
+  language,
 }) => (
-  <a key={id} href={url} target="_blank" rel="noreferrer">
-    <CardWrapper className="flex flex-col p-0 h-full rounded-2xl">
+  <a
+    key={id}
+    target="_blank"
+    rel="noreferrer"
+    href={url}
+    onClick={(e) => isDisabled && e.preventDefault()}
+    className={cn("relative rounded-2xl", {
+      "pointer-events-none": isDisabled,
+    })}
+    aria-disabled={isDisabled}
+  >
+    <CardWrapper className="flex flex-col p-0 h-full rounded-2xl will-change-transform transform scale-[1] relative overflow-hidden">
       <Image
         src={img}
         alt={title}
@@ -62,6 +77,18 @@ export const PortfolioCard: FC<IPortfolioCardProps> = ({
           ))}
         </div>
       </div>
+      {isDisabled && (
+        <>
+          <div className="absolute inset-0 bg-zinc-100 dark:bg-zinc-900 opacity-70 rounded-2xl z-10 pointer-events-auto" />
+          <div
+            className="absolute inset-0 flex items-center justify-center z-20 pointer-events-auto px-4 top-1/4 -translate-y-1/2"
+          >
+            <div className="max-w-52 sm:max-w-64 text-center p-5 bg-white dark:bg-slate-700 shadow-xl rounded-xl">
+              {BasicMessages[language].projectClosed}
+            </div>
+          </div>
+        </>
+      )}
     </CardWrapper>
   </a>
 )
