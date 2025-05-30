@@ -33,4 +33,12 @@ export default [
   pluginJs.configs.recommended,
   ...tseslint.configs.recommended,
   pluginReact.configs.flat.recommended,
+
+  // Отключение правила react/react-in-jsx-scope
+  {
+    files: ["**/*.{js,jsx,ts,tsx}"],
+    rules: {
+      "react/react-in-jsx-scope": "off",
+    },
+  },
 ];
