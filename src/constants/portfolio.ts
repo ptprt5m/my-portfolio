@@ -84,6 +84,23 @@ export const Portfolio = {
         stack: [TECHNOLOGY_TITLE.tilda],
         img: "/lock.png",
       },
+      {
+        id: 5,
+        url: "https://v0-classic-wedding-landing.vercel.app/",
+        title: "Wedding Invitation",
+        desc: "A wedding invitation site designed in a light and modern style. Sold as a template.",
+        status: {
+          isPersonal: true,
+          title: "Personal",
+        },
+        year: "2025",
+        stack: [
+          TECHNOLOGY_TITLE.nextJs,
+          TECHNOLOGY_TITLE.tailwindCss,
+          TECHNOLOGY_TITLE.shadcn,
+        ],
+        img: "/wedding.png",
+      },
     ],
   },
   [LANGUAGES.RU]: {
@@ -167,6 +184,23 @@ export const Portfolio = {
         year: "2024",
         stack: [TECHNOLOGY_TITLE.tilda],
         img: "/lock.png",
+      },
+      {
+        id: 5,
+        url: "https://v0-classic-wedding-landing.vercel.app/",
+        title: "Приглашение на свадьбу",
+        desc: "Сайт-приглашение, выполненный в светлом современном стиле. Продаётся как шаблон.",
+        status: {
+          isPersonal: true,
+          title: "Личный",
+        },
+        year: "2025",
+        stack: [
+          TECHNOLOGY_TITLE.nextJs,
+          TECHNOLOGY_TITLE.tailwindCss,
+          TECHNOLOGY_TITLE.shadcn,
+        ],
+        img: "/wedding.png",
       },
     ],
   },
