@@ -36,6 +36,10 @@ export const TECHNOLOGY_TITLE = {
   shadcn: "Shadcn/ui",
   web3: "Web3",
   ethers: "Ethers",
+  v0: "v0",
+  cursor: "Cursor",
+  gpt5: "GPT-5",
+  grok4: "Grok 4",
 }
 
 export const TECHNOLOGY_GROUPS = {
@@ -74,6 +78,10 @@ export const TECHNOLOGY_GROUPS = {
     eslint: TECHNOLOGY_TITLE.eslint,
     web3: TECHNOLOGY_TITLE.web3,
     ethers: TECHNOLOGY_TITLE.ethers,
+    v0: TECHNOLOGY_TITLE.v0,
+    cursor: TECHNOLOGY_TITLE.cursor,
+    gpt5: TECHNOLOGY_TITLE.gpt5,
+    grok4: TECHNOLOGY_TITLE.grok4,
   },
 }
 
@@ -102,7 +110,7 @@ export const Skills = {
       {
         id: 3,
         title: "Utilities",
-        level: 65,
+        level: 75,
         items: Object.values(TECHNOLOGY_GROUPS.utilities),
       },
     ],
@@ -131,7 +139,7 @@ export const Skills = {
       {
         id: 3,
         title: "Утилиты",
-        level: 65,
+        level: 75,
         items: Object.values(TECHNOLOGY_GROUPS.utilities),
       },
     ],
