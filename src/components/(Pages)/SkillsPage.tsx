@@ -55,7 +55,7 @@ export const SkillsPage = () => {
 
             {isCursorVisible && index === 1 && (
               <motion.div
-                className="relative"
+                className="relative pointer-events-none"
                 initial={{ x: 0, y: 0 }}
                 animate={{ x: [0, -10, 0], y: [0, -10, 0] }}
                 transition={{
@@ -76,7 +76,7 @@ export const SkillsPage = () => {
                 >
                   <ClickSelect className="absolute bottom-2 right-2 md:bottom-7 md:right-7" />
                 </motion.div>
-                <Cursor className="absolute bottom-0 right-0 md:bottom-5 md:right-5" />
+                <Cursor className="absolute bottom-0 right-0 md:bottom-5 md:right-5 " />
               </motion.div>
             )}
           </Animation>

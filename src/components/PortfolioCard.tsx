@@ -36,10 +36,10 @@ export const PortfolioCard: FC<IPortfolioCardProps> = ({
     key={id}
     target="_blank"
     rel="noreferrer"
-    href={url}
+    href={isDisabled ? undefined : url}
     onClick={(e) => isDisabled && e.preventDefault()}
     className={cn("relative rounded-2xl", {
-      "pointer-events-none": isDisabled,
+      "pointer-events-none cursor-not-allowed": isDisabled,
     })}
     aria-disabled={isDisabled}
   >
