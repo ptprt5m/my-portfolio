@@ -10,7 +10,7 @@ export const Header = () => {
   const [colorChange, setColorChange] = useState(false)
 
   const changeHeaderColor = () => {
-    if (window.scrollY >= 100) {
+    if (window.scrollY >= 50) {
       setColorChange(true)
     } else {
       setColorChange(false)
