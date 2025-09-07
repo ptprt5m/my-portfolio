@@ -7,6 +7,7 @@ export const Portfolio = {
     items: [
       {
         id: 0,
+        inProgress: false,
         url: "/",
         title: "This site",
         desc: "Frontend developer's business card site",
@@ -25,6 +26,7 @@ export const Portfolio = {
       },
       {
         id: 1,
+        inProgress: false,
         isDisabled: true,
         url: "https://21-sport.ru",
         title: "21 Store",
@@ -43,6 +45,7 @@ export const Portfolio = {
       },
       {
         id: 2,
+        inProgress: false,
         url: "https://syktyvkar.vercel.app",
         title: "City of Syktyvkar",
         desc: "Website of the beautiful city of Syktyvkar, the capital of the Komi Republic",
@@ -60,6 +63,7 @@ export const Portfolio = {
       },
       {
         id: 3,
+        inProgress: false,
         url: "https://menfin.ru",
         title: "Management and Finance",
         desc: "Participated in interface design, layout, form setup with validation, and state management",
@@ -73,6 +77,7 @@ export const Portfolio = {
       },
       {
         id: 4,
+        inProgress: false,
         url: "https://zamkovkomi.ru/",
         title: "Emergency Lock Opening",
         desc: "A minimalist business card website with a simple and user-friendly design, created upon the client's request",
@@ -86,9 +91,10 @@ export const Portfolio = {
       },
       {
         id: 5,
+        inProgress: false,
         url: "https://v0-classic-wedding-landing.vercel.app/",
         title: "Wedding Invitation",
-        desc: "A wedding invitation site designed in a light and modern style. Sold as a template.",
+        desc: "A wedding invitation site designed in a light and modern style. Sold as a template",
         status: {
           isPersonal: true,
           title: "Personal",
@@ -104,9 +110,10 @@ export const Portfolio = {
       },
       {
         id: 6,
+        inProgress: false,
         url: "https://dry-cleaning-cleanliness.vercel.app",
         title: "ChistoTa Dry Cleaning",
-        desc: "A concise dry cleaning website template for sale. Inspired by outdated and boring sites of other companies.",
+        desc: "A concise dry cleaning website template for sale. Inspired by outdated and boring sites of other companies",
         status: {
           isPersonal: true,
           title: "Personal",
@@ -121,6 +128,26 @@ export const Portfolio = {
         ],
         img: "/dry-cleaning.png",
       },
+      {
+        id: 7,
+        inProgress: true,
+        url: '',
+        title: "Text Comparison",
+        desc: "An app for comparing texts with highlighted differences. Data is not stored, analyzed, or transmitted",
+        status: {
+          isPersonal: true,
+          title: "Personal",
+        },
+        year: "2025",
+        stack: [
+          TECHNOLOGY_TITLE.nextJs,
+          TECHNOLOGY_TITLE.tailwindCss,
+          TECHNOLOGY_TITLE.shadcn,
+          TECHNOLOGY_TITLE.v0,
+        ],
+        img: "/text-comparison.png",
+      }
+      
     ],
   },
   [LANGUAGES.RU]: {
@@ -128,6 +155,7 @@ export const Portfolio = {
     items: [
       {
         id: 0,
+        inProgress: false,
         url: "/",
         title: "Этот сайт",
         desc: "Сайт-визитка Frontend-разработчика",
@@ -146,6 +174,7 @@ export const Portfolio = {
       },
       {
         id: 1,
+        inProgress: false,
         isDisabled: true,
         url: "https://21-sport.ru",
         title: "21 стор",
@@ -164,6 +193,7 @@ export const Portfolio = {
       },
       {
         id: 2,
+        inProgress: false,
         url: "https://syktyvkar.vercel.app",
         title: "Город Сыктывкар",
         desc: "Сайт-визитка прекрасного города Сыктывкар, столицы Республики Коми",
@@ -181,6 +211,7 @@ export const Portfolio = {
       },
       {
         id: 3,
+        inProgress: false,
         url: "https://menfin.ru",
         title: "Менеджмент и Финансы",
         desc: "Участвовал в дизайне интерфейсов, верстке, настройке форм с валидацией и управлении состоянием",
@@ -194,6 +225,7 @@ export const Portfolio = {
       },
       {
         id: 4,
+        inProgress: false,
         url: "https://zamkovkomi.ru/",
         title: "Аварийное вскрытие замков",
         desc: "Минималистичный сайт-визитка с простым и удобным дизайном, созданный по запросу мастера",
@@ -207,6 +239,7 @@ export const Portfolio = {
       },
       {
         id: 5,
+        inProgress: false,
         url: "https://v0-classic-wedding-landing.vercel.app/",
         title: "Приглашение на свадьбу",
         desc: "Сайт-приглашение, выполненный в светлом современном стиле. Продаётся как шаблон.",
@@ -225,6 +258,7 @@ export const Portfolio = {
       },
       {
         id: 6,
+        inProgress: false,
         url: "https://dry-cleaning-cleanliness.vercel.app",
         title: "Химчистка ЧистоТа",
         desc: "Лаконичный шаблон сайта химчистки на продажу. Вдохновлен устаревшими и скучными сайтами других компаний",
@@ -241,6 +275,25 @@ export const Portfolio = {
           TECHNOLOGY_TITLE.zustand
         ],
         img: "/dry-cleaning.png",
+      },
+      {
+        id: 7,
+        inProgress: true,
+        url: '',
+        title: "Сравнение текстов",
+        desc: "Приложение для сравнения текстов с подсветкой различий. Данные не хранятся, не анализируются и не передаются",
+        status: {
+          isPersonal: true,
+          title: "Личный",
+        },
+        year: "2025",
+        stack: [
+          TECHNOLOGY_TITLE.nextJs,
+          TECHNOLOGY_TITLE.tailwindCss,
+          TECHNOLOGY_TITLE.shadcn,
+          TECHNOLOGY_TITLE.v0,
+        ],
+        img: "/text-comparison.png",
       },
     ],
   },

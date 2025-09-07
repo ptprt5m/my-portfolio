@@ -18,6 +18,7 @@ interface IPortfolioCardProps {
   };
   year: string;
   isDisabled?: boolean;
+  inProgress: boolean;
   language: string;
 }
 export const PortfolioCard: FC<IPortfolioCardProps> = ({
@@ -30,18 +31,19 @@ export const PortfolioCard: FC<IPortfolioCardProps> = ({
   status,
   year,
   isDisabled,
+  inProgress,
   language,
 }) => (
   <a
     key={id}
     target="_blank"
     rel="noreferrer"
-    href={isDisabled ? undefined : url}
-    onClick={(e) => isDisabled && e.preventDefault()}
+    href={isDisabled || inProgress ? undefined : url}
+    onClick={(e) => isDisabled || inProgress && e.preventDefault()}
     className={cn("relative rounded-2xl", {
-      "pointer-events-none cursor-not-allowed": isDisabled,
+      "pointer-events-none cursor-not-allowed": isDisabled || inProgress,
     })}
-    aria-disabled={isDisabled}
+    aria-disabled={isDisabled || inProgress}
   >
     <CardWrapper className="flex flex-col p-0 h-full rounded-2xl will-change-transform transform scale-[1] relative overflow-hidden">
       <Image
@@ -85,6 +87,18 @@ export const PortfolioCard: FC<IPortfolioCardProps> = ({
           >
             <div className="max-w-52 sm:max-w-64 text-center p-5 bg-white dark:bg-slate-700 shadow-xl rounded-xl">
               {BasicMessages[language].projectClosed}
+            </div>
+          </div>
+        </>
+      )}
+      {inProgress && (
+        <>
+          <div className="absolute inset-0 bg-zinc-100 dark:bg-zinc-900 opacity-70 rounded-2xl z-10 pointer-events-auto" />
+          <div
+            className="absolute inset-0 flex items-center justify-center z-20 pointer-events-auto px-4 top-1/4 -translate-y-1/2"
+          >
+            <div className="max-w-52 sm:max-w-64 text-center p-5 bg-white dark:bg-slate-700 shadow-xl rounded-xl">
+              {BasicMessages[language].inProgress}
             </div>
           </div>
         </>
