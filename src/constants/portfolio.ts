@@ -59,7 +59,7 @@ export const Portfolio = {
           TECHNOLOGY_TITLE.reduxToolkit,
           TECHNOLOGY_TITLE.tailwindCss,
         ],
-        img: "/syktyvkar.png",
+        img: "/syktyvkar.jpeg",
       },
       {
         id: 3,
@@ -124,14 +124,14 @@ export const Portfolio = {
           TECHNOLOGY_TITLE.tailwindCss,
           TECHNOLOGY_TITLE.shadcn,
           TECHNOLOGY_TITLE.v0,
-          TECHNOLOGY_TITLE.zustand
+          TECHNOLOGY_TITLE.zustand,
         ],
         img: "/dry-cleaning.png",
       },
       {
         id: 7,
         inProgress: true,
-        url: '',
+        url: "",
         title: "Text Comparison",
         desc: "An app for comparing texts with highlighted differences. Data is not stored, analyzed, or transmitted",
         status: {
@@ -146,8 +146,7 @@ export const Portfolio = {
           TECHNOLOGY_TITLE.v0,
         ],
         img: "/text-comparison.png",
-      }
-      
+      },
     ],
   },
   [LANGUAGES.RU]: {
@@ -207,7 +206,7 @@ export const Portfolio = {
           TECHNOLOGY_TITLE.reduxToolkit,
           TECHNOLOGY_TITLE.tailwindCss,
         ],
-        img: "/syktyvkar.png",
+        img: "/syktyvkar.jpeg",
       },
       {
         id: 3,
@@ -272,14 +271,14 @@ export const Portfolio = {
           TECHNOLOGY_TITLE.tailwindCss,
           TECHNOLOGY_TITLE.shadcn,
           TECHNOLOGY_TITLE.v0,
-          TECHNOLOGY_TITLE.zustand
+          TECHNOLOGY_TITLE.zustand,
         ],
         img: "/dry-cleaning.png",
       },
       {
         id: 7,
         inProgress: true,
-        url: '',
+        url: "",
         title: "Сравнение текстов",
         desc: "Приложение для сравнения текстов с подсветкой различий. Данные не хранятся, не анализируются и не передаются",
         status: {
