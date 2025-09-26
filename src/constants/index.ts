@@ -6,3 +6,5 @@ export * from "./portfolio"
 export * from "./skills"
 export * from "./experience"
 export * from './messages'
+export * from './common'
+export * from './projects'
