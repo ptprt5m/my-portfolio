@@ -57,9 +57,9 @@ export const PROJECTS = [
     inProgress: false,
     url: "https://zamkovkomi.ru/",
     isPersonal: true,
-    year: "2024",
-    stack: [TECHNOLOGY_TITLE.tilda],
-    img: "/lock.png",
+    year: "2024-2025",
+    stack: [TECHNOLOGY_TITLE.nextJs, TECHNOLOGY_TITLE.tailwindCss, TECHNOLOGY_TITLE.gpt5, TECHNOLOGY_TITLE.shadcn, TECHNOLOGY_TITLE.v0],
+    img: "/zamkovkomi.png",
   },
   {
     id: 5,
@@ -126,8 +126,8 @@ export const PROJECT_TEXTS = {
     },
     {
       title: "Emergency Lock Opening",
-      desc: "A minimalist business card website with a simple and user-friendly design, created upon the client's request",
-    },
+      desc: "A modern multi-page website for a locksmith, featuring easy navigation and a helpful blog"
+    },    
     {
       title: "Wedding Invitation",
       desc: "A wedding invitation site designed in a light and modern style. Sold as a template",
@@ -160,7 +160,7 @@ export const PROJECT_TEXTS = {
     },
     {
       title: "Аварийное вскрытие замков",
-      desc: "Минималистичный сайт-визитка с простым и удобным дизайном, созданный по запросу мастера",
+      desc: "Современный многостраничный сайт мастера по замкам с удобной навигацией и полезным блогом",
     },
     {
       title: "Приглашение на свадьбу",
