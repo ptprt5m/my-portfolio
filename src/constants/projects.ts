@@ -58,11 +58,31 @@ export const PROJECTS = [
     url: "https://zamkovkomi.ru/",
     isPersonal: true,
     year: "2024-2025",
-    stack: [TECHNOLOGY_TITLE.nextJs, TECHNOLOGY_TITLE.tailwindCss, TECHNOLOGY_TITLE.gpt5, TECHNOLOGY_TITLE.shadcn, TECHNOLOGY_TITLE.v0],
+    stack: [
+      TECHNOLOGY_TITLE.nextJs,
+      TECHNOLOGY_TITLE.tailwindCss,
+      TECHNOLOGY_TITLE.gpt5,
+      TECHNOLOGY_TITLE.shadcn,
+      TECHNOLOGY_TITLE.v0,
+    ],
     img: "/zamkovkomi.png",
   },
   {
     id: 5,
+    inProgress: false,
+    url: "https://zamkovkomi-auto.ru/",
+    isPersonal: true,
+    year: "2025",
+    stack: [
+      TECHNOLOGY_TITLE.nextJs,
+      TECHNOLOGY_TITLE.tailwindCss,
+      TECHNOLOGY_TITLE.shadcn,
+      TECHNOLOGY_TITLE.v0,
+    ],
+    img: "/zamkovkomi-auto.png",
+  },
+  {
+    id: 6,
     inProgress: false,
     url: "https://v0-classic-wedding-landing.vercel.app/",
     isPersonal: true,
@@ -76,7 +96,7 @@ export const PROJECTS = [
     img: "/wedding.png",
   },
   {
-    id: 6,
+    id: 7,
     inProgress: false,
     url: "https://dry-cleaning-cleanliness.vercel.app",
     isPersonal: true,
@@ -91,7 +111,7 @@ export const PROJECTS = [
     img: "/dry-cleaning.png",
   },
   {
-    id: 7,
+    id: 8,
     inProgress: true,
     url: "",
     isPersonal: true,
@@ -126,8 +146,12 @@ export const PROJECT_TEXTS = {
     },
     {
       title: "Emergency Lock Opening",
-      desc: "A modern multi-page website for a locksmith, featuring easy navigation and a helpful blog"
-    },    
+      desc: "A modern multi-page website for a locksmith, featuring easy navigation and a helpful blog",
+    },
+    {
+      title: "Emergency car opening",
+      desc: "A separate landing page of a specialist for car opening for this specific service",
+    },
     {
       title: "Wedding Invitation",
       desc: "A wedding invitation site designed in a light and modern style. Sold as a template",
@@ -161,6 +185,10 @@ export const PROJECT_TEXTS = {
     {
       title: "Аварийное вскрытие замков",
       desc: "Современный многостраничный сайт мастера по замкам с удобной навигацией и полезным блогом",
+    },
+    {
+      title: "Аварийное вскрытие авто",
+      desc: "Отдельный лендинг мастера по выскрытию авто для конкретной услуги",
     },
     {
       title: "Приглашение на свадьбу",
