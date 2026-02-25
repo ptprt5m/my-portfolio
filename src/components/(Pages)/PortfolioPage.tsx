@@ -1,7 +1,6 @@
 "use client"
 
 import {
-  EmptyPortfolioCard,
   PortfolioCard,
   ScaleAnimation,
 } from "@/components"
@@ -14,15 +13,12 @@ export const PortfolioPage = () => {
 
   return (
     <PageLayout pageTitle={PortfolioConst[language].title}>
-      <div className="grid grid-cols-1 lg:grid-cols-3 w-full gap-10">
+      <div className="grid grid-cols-1 lg:grid-cols-2 w-full gap-10 max-w-3xl mx-auto">
         {PortfolioConst[language].items.map((site) => (
           <ScaleAnimation key={site.id} speed={site.id + 1}>
             <PortfolioCard {...site} language={language} />
           </ScaleAnimation>
         ))}
-        <ScaleAnimation speed={PortfolioConst[language].items.length + 1}>
-          <EmptyPortfolioCard />
-        </ScaleAnimation>
       </div>
     </PageLayout>
   )

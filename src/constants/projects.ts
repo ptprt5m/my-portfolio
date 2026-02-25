@@ -1,7 +1,11 @@
 import { LANGUAGES } from "./language"
 import { TECHNOLOGY_TITLE } from "./skills"
 
-export const PROJECTS = [
+/* ==============================================
+   ARCHIVED PROJECTS — commented out, not deleted
+   ==============================================
+
+export const PROJECTS_ARCHIVED = [
   {
     id: 0,
     inProgress: false,
@@ -126,7 +130,7 @@ export const PROJECTS = [
   },
 ]
 
-export const PROJECT_TEXTS = {
+export const PROJECT_TEXTS_ARCHIVED = {
   [LANGUAGES.EN]: [
     {
       title: "This site",
@@ -201,6 +205,65 @@ export const PROJECT_TEXTS = {
     {
       title: "Сравнение текстов",
       desc: "Приложение для сравнения текстов с подсветкой различий. Данные не хранятся, не анализируются и не передаются",
+    },
+  ],
+}
+
+============================================== */
+
+// zefi-shop & zefi-crm — new projects in progress
+export const PROJECTS = [
+  {
+    id: 0,
+    name: "zefi-shop",
+    inProgress: true,
+    url: "",
+    isPersonal: true,
+    year: "2026",
+    stack: [
+      TECHNOLOGY_TITLE.nextJs,
+      TECHNOLOGY_TITLE.tailwindCss,
+      TECHNOLOGY_TITLE.shadcn,
+      TECHNOLOGY_TITLE.v0,
+    ],
+    img: "/portfolio.png",
+  },
+  {
+    id: 1,
+    name: "zefi-crm",
+    inProgress: true,
+    url: "",
+    isPersonal: true,
+    year: "2026",
+    stack: [
+      TECHNOLOGY_TITLE.nextJs,
+      TECHNOLOGY_TITLE.tailwindCss,
+      TECHNOLOGY_TITLE.shadcn,
+      TECHNOLOGY_TITLE.v0,
+    ],
+    img: "/portfolio.png",
+  },
+]
+
+export const PROJECT_TEXTS = {
+  [LANGUAGES.EN]: [
+    {
+      title: "Zefi Shop",
+      desc: "Online store project",
+    },
+    {
+      title: "Zefi CRM",
+      desc: "Customer relationship management system",
+    },
+  ],
+  [LANGUAGES.RU]: [
+    {
+      title: "Zefi Shop",
+      desc: "Проект интернет-магазина",
+    },
+    {
+      title: "Zefi CRM",
+      desc: "Система управления клиентами",
     },
   ],
 }
