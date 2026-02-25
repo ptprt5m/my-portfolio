@@ -23,7 +23,12 @@ export const Experience = {
           TECHNOLOGY_TITLE.gitlab,
           TECHNOLOGY_TITLE.shadcn,
         ],
-        desc: "Разработка и поддержка внутренних и внешних веб-приложений компании: лендинги, корпоративные порталы, многоролевые системы и дашборды средней/высокой сложности. Основная работа: проектирование, разработка и выкатывание новых фич, поддержка существующих компонентов, участие в архитектурных решениях приложений, код-ревью и рефакторинг. Взаимодействие с командой фронтенда, backend разработчиками и дизайнером. Next.js стек: client/server components, app router, middleware, аутентификация (NextAuth), REST API",
+        desc: [
+          "Разработка и поддержка внутренних и внешних веб-приложений компании: лендинги, корпоративные порталы, многоролевые системы и дашборды средней/высокой сложности",
+          "Основная работа: проектирование, разработка и выкатывание новых фич, поддержка существующих компонентов, участие в архитектурных решениях приложений, код-ревью и рефакторинг",
+          "Взаимодействие с командой фронтенда, backend разработчиками и дизайнером",
+          "Next.js стек: client/server components, app router, middleware, аутентификация (NextAuth), REST API",
+        ],
       },
       {
         company: "Фриланс",
@@ -47,7 +52,10 @@ export const Experience = {
           TECHNOLOGY_TITLE.csCart,
           TECHNOLOGY_TITLE.tilda,
         ],
-        desc: "Разработка и поддержка разнообразных веб-проектов: лендинги, многостраничники, корпоративные сайты и интернет магазины. Выполнение верстки по макетам, создание динамических интерфейсов на JavaScript, редизайн и оптимизация сайтов. Большая часть проектов реализована на конструкторах и CMS, несколько — на Next.js",
+        desc: [
+          "Разработка и поддержка разнообразных веб-проектов: лендинги, многостраничники, корпоративные сайты и интернет магазины",
+          "Выполнение верстки по макетам, создание динамических интерфейсов на JavaScript, редизайн и оптимизация сайтов. Большая часть проектов реализована на конструкторах и CMS, несколько — на Next.js",
+        ],
       },
       {
         company: "TopMarka1",
@@ -64,7 +72,10 @@ export const Experience = {
           TECHNOLOGY_TITLE.sass,
           TECHNOLOGY_TITLE.git,
         ],
-        desc: "Участие в разработке React-проекта в команде. Реализация компонентов и логики приложения, работа с глобальным состоянием и маршрутизацией, поддержка структуры проекта и взаимодействие с существующей кодовой базой",
+        desc: [
+          "Участие в разработке React-проекта в команде",
+          "Реализация компонентов и логики приложения, работа с глобальным состоянием и маршрутизацией, поддержка структуры проекта и взаимодействие с существующей кодовой базой",
+        ],
       },
       {
         company: "21 sport nn",
@@ -82,7 +93,13 @@ export const Experience = {
           TECHNOLOGY_TITLE.git,
           TECHNOLOGY_TITLE.sass,
         ],
-        desc: "Разработка web-приложения для небольшого розничного бизнеса. Проектирование и реализация frontend-части интернет магазина: каталог, карточки товаров, корзина, избранное, система скидок и промокодов, базовая логика лояльности, админ панель, интеграция юкассы. Самостоятельная работа над архитектурой frontend приложения: структура страниц, глобальное состояние, навигация и взаимодействие между разделами. Использование Redux для управления состоянием (фильтрация, сортировка, синхронизация с query-параметрами и тд). Взаимодействие с backend: формирование требований к API и структуры данных. Фактически полная ответственность за проект",
+        desc: [
+          "Разработка web-приложения для небольшого розничного бизнеса",
+          "Проектирование и реализация frontend-части интернет магазина: каталог, карточки товаров, корзина, избранное, система скидок и промокодов, базовая логика лояльности, админ панель, интеграция юкассы",
+          "Самостоятельная работа над архитектурой frontend приложения: структура страниц, глобальное состояние, навигация и взаимодействие между разделами. Использование Redux для управления состоянием (фильтрация, сортировка, синхронизация с query-параметрами и тд)",
+          "Взаимодействие с backend: формирование требований к API и структуры данных",
+          "Фактически полная ответственность за проект",
+        ],
       },
       {
         company: "АО «ГНИВЦ»",
@@ -99,7 +116,12 @@ export const Experience = {
           TECHNOLOGY_TITLE.sass,
           TECHNOLOGY_TITLE.jsx,
         ],
-        desc: "Участие в официальной стажировке с отбором (технические интервью, тестовое задание, проектный этап). Работа над реальным внутренним продуктом компании в команде: разработка отдельных фич и компонентов на React + TypeScript + MobX. Совместная декомпозиция задач, распределение ответственности внутри команды, работа по итерациям. Проектирование и обсуждение архитектурных решений совместно с командой и ментором. Регулярные code review, обратная связь по качеству кода и принятым решениям. Фокус на frontend-разработке",
+        desc: [
+          "Участие в официальной стажировке с отбором (технические интервью, тестовое задание, проектный этап)",
+          "Работа над реальным внутренним продуктом компании в команде: разработка отдельных фич и компонентов на React + TypeScript + MobX. Совместная декомпозиция задач, распределение ответственности внутри команды, работа по итерациям",
+          "Проектирование и обсуждение архитектурных решений совместно с командой и ментором. Регулярные code review, обратная связь по качеству кода и принятым решениям",
+          "Фокус на frontend-разработке",
+        ],
       },
       {
         company: "СГУ им. П. Сорокина",
@@ -115,7 +137,11 @@ export const Experience = {
           TECHNOLOGY_TITLE.php,
           TECHNOLOGY_TITLE.mySql,
         ],
-        desc: "Участие в разработке внутренних web-проектов университета в рамках учебной практики и дипломной работы. Работа над студенческим порталом: реализация отдельных модулей и интерфейсных компонентов (расписания, таблицы, базовые UI-элементы), взаимодействие с серверной логикой на PHP и базой данных MySQL. Индивидуальная разработка web-приложения в рамках дипломной работы: проектирование и реализация frontend/backend частей, работа с базовой бизнес-логикой и данными",
+        desc: [
+          "Участие в разработке внутренних web-проектов университета в рамках учебной практики и дипломной работы",
+          "Работа над студенческим порталом: реализация отдельных модулей и интерфейсных компонентов (расписания, таблицы, базовые UI-элементы), взаимодействие с серверной логикой на PHP и базой данных MySQL",
+          "Индивидуальная разработка web-приложения в рамках дипломной работы: проектирование и реализация frontend/backend частей, работа с базовой бизнес-логикой и данными",
+        ],
       },
     ],
   },
@@ -141,7 +167,12 @@ export const Experience = {
           TECHNOLOGY_TITLE.gitlab,
           TECHNOLOGY_TITLE.shadcn,
         ],
-        desc: "Development and maintenance of internal and external web applications: landing pages, corporate portals, multi-role systems, and dashboards of medium/high complexity. Core work: designing, developing, and shipping new features, maintaining existing components, participating in architectural decisions, code reviews, and refactoring. Collaboration with the frontend team, backend developers, and designer. Next.js stack: client/server components, app router, middleware, authentication (NextAuth), REST API",
+        desc: [
+          "Development and maintenance of internal and external web applications: landing pages, corporate portals, multi-role systems, and dashboards of medium/high complexity",
+          "Core work: designing, developing, and shipping new features, maintaining existing components, participating in architectural decisions, code reviews, and refactoring",
+          "Collaboration with the frontend team, backend developers, and designer",
+          "Next.js stack: client/server components, app router, middleware, authentication (NextAuth), REST API",
+        ],
       },
       {
         company: "Freelance",
@@ -165,7 +196,10 @@ export const Experience = {
           TECHNOLOGY_TITLE.csCart,
           TECHNOLOGY_TITLE.tilda,
         ],
-        desc: "Development and maintenance of various web projects: landing pages, multi-page websites, corporate sites, and online stores. Layout implementation from mockups, creating dynamic interfaces with JavaScript, redesigning and optimizing websites. Most projects were built on website builders and CMS platforms, several on Next.js",
+        desc: [
+          "Development and maintenance of various web projects: landing pages, multi-page websites, corporate sites, and online stores",
+          "Layout implementation from mockups, creating dynamic interfaces with JavaScript, redesigning and optimizing websites. Most projects were built on website builders and CMS platforms, several on Next.js",
+        ],
       },
       {
         company: "TopMarka1",
@@ -182,7 +216,10 @@ export const Experience = {
           TECHNOLOGY_TITLE.sass,
           TECHNOLOGY_TITLE.git,
         ],
-        desc: "Participated in a React project development as part of a team. Implemented components and application logic, worked with global state management and routing, maintained project structure, and collaborated with the existing codebase",
+        desc: [
+          "Participated in a React project development as part of a team",
+          "Implemented components and application logic, worked with global state management and routing, maintained project structure, and collaborated with the existing codebase",
+        ],
       },
       {
         company: "21 sport nn",
@@ -200,7 +237,13 @@ export const Experience = {
           TECHNOLOGY_TITLE.git,
           TECHNOLOGY_TITLE.sass,
         ],
-        desc: "Development of a web application for a small retail business. Designed and implemented the frontend of an online store: catalog, product cards, cart, favorites, discount and promo code system, basic loyalty logic, admin panel, YooKassa payment integration. Independent work on the frontend application architecture: page structure, global state, navigation, and interaction between sections. Used Redux for state management (filtering, sorting, syncing with query parameters, etc.). Backend collaboration: defining API requirements and data structures. Effectively had full responsibility for the project",
+        desc: [
+          "Development of a web application for a small retail business",
+          "Designed and implemented the frontend of an online store: catalog, product cards, cart, favorites, discount and promo code system, basic loyalty logic, admin panel, YooKassa payment integration",
+          "Independent work on the frontend application architecture: page structure, global state, navigation, and interaction between sections. Used Redux for state management (filtering, sorting, syncing with query parameters, etc.)",
+          "Backend collaboration: defining API requirements and data structures",
+          "Effectively had full responsibility for the project",
+        ],
       },
       {
         company: "AO GNIVC",
@@ -217,7 +260,12 @@ export const Experience = {
           TECHNOLOGY_TITLE.sass,
           TECHNOLOGY_TITLE.jsx,
         ],
-        desc: "Participated in an official internship program with a competitive selection process (technical interviews, test assignment, project phase). Worked on a real internal company product as part of a team: developed individual features and components using React + TypeScript + MobX. Collaborative task decomposition, responsibility distribution within the team, iterative workflow. Designed and discussed architectural decisions together with the team and mentor. Regular code reviews, feedback on code quality and decisions made. Focus on frontend development",
+        desc: [
+          "Participated in an official internship program with a competitive selection process (technical interviews, test assignment, project phase)",
+          "Worked on a real internal company product as part of a team: developed individual features and components using React + TypeScript + MobX. Collaborative task decomposition, responsibility distribution within the team, iterative workflow",
+          "Designed and discussed architectural decisions together with the team and mentor. Regular code reviews, feedback on code quality and decisions made",
+          "Focus on frontend development",
+        ],
       },
       {
         company: "Syktyvkar State University",
@@ -233,7 +281,11 @@ export const Experience = {
           TECHNOLOGY_TITLE.php,
           TECHNOLOGY_TITLE.mySql,
         ],
-        desc: "Participated in the development of internal university web projects as part of an internship and thesis work. Worked on a student portal: implemented individual modules and interface components (schedules, tables, basic UI elements), interacted with server-side logic in PHP and MySQL database. Individual development of a web application for the thesis: designed and implemented frontend/backend parts, worked with basic business logic and data",
+        desc: [
+          "Participated in the development of internal university web projects as part of an internship and thesis work",
+          "Worked on a student portal: implemented individual modules and interface components (schedules, tables, basic UI elements), interacted with server-side logic in PHP and MySQL database",
+          "Individual development of a web application for the thesis: designed and implemented frontend/backend parts, worked with basic business logic and data",
+        ],
       },
     ],
   },
