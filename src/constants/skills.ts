@@ -106,7 +106,7 @@ export const Skills = {
       {
         id: 2,
         title: "Logic",
-        level: 75,
+        level: 80,
         items: Object.values(TECHNOLOGY_GROUPS.logic),
       },
       {
@@ -135,7 +135,7 @@ export const Skills = {
       {
         id: 2,
         title: "Логика",
-        level: 75,
+        level: 80,
         items: Object.values(TECHNOLOGY_GROUPS.logic),
       },
       {
