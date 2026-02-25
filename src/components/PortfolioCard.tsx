@@ -93,10 +93,10 @@ export const PortfolioCard: FC<IPortfolioCardProps> = ({
       )}
       {inProgress && (
         <>
-          <div className="absolute inset-0 backdrop-blur-xl bg-zinc-100/40 dark:bg-zinc-900/40 rounded-2xl z-10" />
+          <div className="absolute inset-0 backdrop-blur-3xl bg-zinc-200/70 dark:bg-zinc-800/70 rounded-2xl z-10" />
           <div className="absolute inset-0 flex items-center justify-center z-20 px-4">
-            <div className="text-center py-3 px-6 bg-white/80 dark:bg-slate-700/80 backdrop-blur-sm shadow-xl rounded-xl border border-slate-200 dark:border-slate-600">
-              <span className="text-lg font-semibold tracking-wide text-slate-700 dark:text-slate-200">
+            <div className="text-center py-3 px-6 bg-white/90 dark:bg-slate-700/90 backdrop-blur-sm shadow-xl rounded-xl border border-slate-200 dark:border-slate-600">
+              <span className="text-base font-normal tracking-wide text-slate-600 dark:text-slate-300">
                 {BasicMessages[language].inProgress}
               </span>
             </div>
