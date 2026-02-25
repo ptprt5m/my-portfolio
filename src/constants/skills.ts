@@ -40,6 +40,7 @@ export const TECHNOLOGY_TITLE = {
   cursor: "Cursor",
   gpt5: "GPT-5",
   grok4: "Grok 4",
+  codex: "Codex"
 }
 
 export const TECHNOLOGY_GROUPS = {
@@ -82,6 +83,7 @@ export const TECHNOLOGY_GROUPS = {
     cursor: TECHNOLOGY_TITLE.cursor,
     gpt5: TECHNOLOGY_TITLE.gpt5,
     grok4: TECHNOLOGY_TITLE.grok4,
+    codex: TECHNOLOGY_TITLE.codex
   },
 }
 

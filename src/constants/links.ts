@@ -22,11 +22,11 @@ export const HeaderLinks = {
       icon: 'ExpSVG',
       href: "/experience",
     },
-    portfolio: {
-      title: "Portfolio",
-      icon: 'PortfolioSVG',
-      href: "/portfolio",
-    },
+    // portfolio: {
+    //   title: "Portfolio",
+    //   icon: 'PortfolioSVG',
+    //   href: "/portfolio",
+    // },
   },
   [LANGUAGES.RU]: {
     home: {
@@ -49,10 +49,10 @@ export const HeaderLinks = {
       icon: 'ExpSVG',
       href: "/experience",
     },
-    portfolio: {
-      title: "Портфолио",
-      icon: 'PortfolioSVG',
-      href: "/portfolio",
-    },
+    // portfolio: {
+    //   title: "Портфолио",
+    //   icon: 'PortfolioSVG',
+    //   href: "/portfolio",
+    // },
   },
 }
